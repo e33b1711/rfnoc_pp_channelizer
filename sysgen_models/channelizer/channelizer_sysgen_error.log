@@ -1,0 +1,24 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2015.2                 /opt/Xilinx/Vivado/2015.2
+Matlab 8.6.0.267246 (R2015b)            /usr/local/MATLAB/R2015b
+Vivado 2015.2                           /opt/Xilinx/Vivado/2015.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Sysgen license checkout failed.
+ XILINXD_LICENSE_FILE = /...
+     Block: Unspecified
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  Unspecified
+
+Details:
+Sysgen license checkout failed.
+ XILINXD_LICENSE_FILE = /opt/Xilinx/Vivado/2015.2/data/sysgen/hwcosim_compiler/pp_ethernet
+ Environment variable LM_LICENSE_FILE is not set.
+ License search path: /home/rfnoc/.Xilinx:/opt/Xilinx/Vivado/2015.2/data/sysgen/hwcosim_compiler/pp_ethernet:/opt/Xilinx/Vivado/2015.2/data/ip/core_licenses
+
+--------------------------------------------------------------------------------

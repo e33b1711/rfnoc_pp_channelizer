@@ -1,0 +1,751 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Apr 18 10:04:19 2016
+# Process ID: 18390
+# Log file: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/vivado.log
+# Journal file: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/vivado.jou
+#-----------------------------------------------------------
+source ProjectGeneration.tcl -notrace
+WARNING: [Coretcl 2-176] No IPs found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'syntheses_xfft_v9_0_0' to 'syntheses_xfft_v9_0_0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'syntheses_c_counter_binary_v12_0_0' to 'syntheses_c_counter_binary_v12_0_0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'syntheses_fir_compiler_v7_2_0' to 'syntheses_fir_compiler_v7_2_0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'syntheses_c_counter_binary_v12_0_1' to 'syntheses_c_counter_binary_v12_0_1' is not allowed and is ignored.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'syntheses_xfft_v9_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'syntheses_xfft_v9_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'syntheses_c_counter_binary_v12_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'syntheses_c_counter_binary_v12_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'syntheses_fir_compiler_v7_2_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'syntheses_fir_compiler_v7_2_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'syntheses_c_counter_binary_v12_0_1'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'syntheses_c_counter_binary_v12_0_1' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+[Mon Apr 18 10:04:30 2016] Launched syntheses_xfft_v9_0_0_synth_1, syntheses_c_counter_binary_v12_0_0_synth_1, syntheses_fir_compiler_v7_2_0_synth_1, syntheses_c_counter_binary_v12_0_1_synth_1...
+Run output will be captured here:
+syntheses_xfft_v9_0_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_xfft_v9_0_0_synth_1/runme.log
+syntheses_c_counter_binary_v12_0_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_0_synth_1/runme.log
+syntheses_fir_compiler_v7_2_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_fir_compiler_v7_2_0_synth_1/runme.log
+syntheses_c_counter_binary_v12_0_1_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_1_synth_1/runme.log
+[Mon Apr 18 10:04:30 2016] Launched synth_1...
+Run output will be captured here: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/runme.log
+[Mon Apr 18 10:04:30 2016] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log syntheses.vds -m64 -mode batch -messageDb vivado.pb -notrace -source syntheses.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source syntheses.tcl -notrace
+Command: synth_design -top syntheses -part xc7k410tffg900-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k410t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k410t'
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -109 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 948.633 ; gain = 138.520 ; free physical = 849 ; free virtual = 9979
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'syntheses' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:857]
+INFO: [Synth 8-638] synthesizing module 'syntheses_default_clock_driver' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:835]
+INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
+	Parameter period bound to: 32'sb00000000000000000000000000000001 
+	Parameter use_bufg bound to: 0 - type: integer 
+	Parameter pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter max_pipeline_regs bound to: 32'sb00000000000000000000000000001000 
+	Parameter num_pipeline_regs bound to: 32'sb00000000000000000000000000000101 
+	Parameter factor bound to: 32'sb00000000000000000000000000000101 
+	Parameter rem_pipeline_regs bound to: 32'sb00000000000000000000000000000001 
+	Parameter trunc_period bound to: 1'b1 
+	Parameter period_floor bound to: 32'sb00000000000000000000000000000010 
+	Parameter power_of_2_counter bound to: 32'sb00000000000000000000000000000001 
+	Parameter cnt_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter clk_for_ce_pulse_minus1 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus2 bound to: 1'b0 
+	Parameter clk_for_ce_pulse_minus_regs bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'synth_reg_w_init' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter latency bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'single_reg_w_init' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+	Parameter width bound to: 1 - type: integer 
+	Parameter init_index bound to: 0 - type: integer 
+	Parameter init_value bound to: 1'b0 
+	Parameter init_index_val bound to: 1'b0 
+	Parameter result bound to: 1'b0 
+	Parameter init_const bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'FDRE' [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3016]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (1#1) [/opt/Xilinx/Vivado/2015.2/scripts/rt/data/unisim_comp.v:3016]
+INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (2#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
+INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (3#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
+INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (4#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:846]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_default_clock_driver' (5#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:835]
+INFO: [Synth 8-638] synthesizing module 'syntheses_struct' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:761]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:805]
+INFO: [Synth 8-638] synthesizing module 'syntheses_implementation_interface_in' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_implementation_interface_in' (6#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:812]
+INFO: [Synth 8-638] synthesizing module 'syntheses_implementation_interface_out' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:27]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_implementation_interface_out' (7#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:27]
+INFO: [Synth 8-638] synthesizing module 'syntheses_syntheses' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:685]
+INFO: [Synth 8-638] synthesizing module 'syntheses_fft' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:183]
+INFO: [Synth 8-638] synthesizing module 'syntheses_subsystem_x0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:47]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_3cf0316996' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:55]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_3cf0316996' (8#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:55]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlslice' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+	Parameter new_msb bound to: 15 - type: integer 
+	Parameter new_lsb bound to: 0 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlslice' (9#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlslice__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 16 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlslice__parameterized0' (9#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_subsystem_x0' (10#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:47]
+INFO: [Synth 8-638] synthesizing module 'syntheses_subsystem1_x0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:97]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_a5b25208fa' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:125]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_a5b25208fa' (11#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:125]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlconvert' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+	Parameter din_width bound to: 21 - type: integer 
+	Parameter din_bin_pt bound to: 15 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter dout_bin_pt bound to: 13 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'convert_type' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 21 - type: integer 
+	Parameter old_bin_pt bound to: 15 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 16 - type: integer 
+	Parameter new_bin_pt bound to: 13 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 2 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000010111 
+	Parameter fp_bin_pt bound to: 15 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter q_bin_pt bound to: 13 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 21 - type: integer 
+	Parameter old_bin_pt bound to: 15 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010111 
+	Parameter new_bin_pt bound to: 15 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast' (12#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-638] synthesizing module 'trunc' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010111 
+	Parameter old_bin_pt bound to: 15 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter new_bin_pt bound to: 13 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000010 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000010 
+INFO: [Synth 8-638] synthesizing module 'extend_msb' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010101 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext' (13#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb' (14#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc' (15#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-638] synthesizing module 'saturation_arith' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:582]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010101 
+	Parameter old_bin_pt bound to: 13 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 16 - type: integer 
+	Parameter new_bin_pt bound to: 13 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_width bound to: 32'sb00000000000000000000000000000001 
+	Parameter abs_new_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'saturation_arith' (16#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:582]
+INFO: [Synth 8-256] done synthesizing module 'convert_type' (17#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlconvert' (18#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_debcca8ae2' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:210]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_debcca8ae2' (19#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:210]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_subsystem1_x0' (20#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:97]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_0ba576828b' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:85]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_0ba576828b' (21#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:85]
+INFO: [Synth 8-638] synthesizing module 'xlfast_fourier_transform_e88bcbd69f6fa35c516aded21de2b91c' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:406]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xfft_v9_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_xfft_v9_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xfft_v9_0_0' (22#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_xfft_v9_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlfast_fourier_transform_e88bcbd69f6fa35c516aded21de2b91c' (23#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:406]
+INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_2b67cf67d8' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:93]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_2b67cf67d8' (24#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:93]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_fft' (25#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:183]
+INFO: [Synth 8-638] synthesizing module 'syntheses_last_handler' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:283]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_25393b4343' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:223]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_25393b4343' (26#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:223]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlcounter_free' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:356]
+	Parameter core_name0 bound to: syntheses_c_counter_binary_v12_0_0 - type: string 
+	Parameter op_width bound to: 10 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter oneStr bound to: 80'b00110001001100010011000100110001001100010011000100110001001100010011000100110001 
+INFO: [Synth 8-638] synthesizing module 'syntheses_c_counter_binary_v12_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_c_counter_binary_v12_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_c_counter_binary_v12_0_0' (27#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_c_counter_binary_v12_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlcounter_free' (28#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:356]
+WARNING: [Synth 8-350] instance 'counter' of module 'syntheses_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_c8c764286e' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:39]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_c8c764286e' (29#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:39]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_968c8d2e5b' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:231]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_968c8d2e5b' (30#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:231]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_last_handler' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:283]
+INFO: [Synth 8-638] synthesizing module 'syntheses_poly_phase_filter' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:583]
+INFO: [Synth 8-638] synthesizing module 'syntheses_subsystem' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:347]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlconvert__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+	Parameter din_width bound to: 16 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 18 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'convert_type__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 18 - type: integer 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter fp_bin_pt bound to: 0 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter q_bin_pt bound to: 0 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-638] synthesizing module 'trunc__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-638] synthesizing module 'wrap_arith' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:754]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 18 - type: integer 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter result_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter new_width bound to: 18 - type: integer 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized1' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'wrap_arith' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:754]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized0' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlconvert__parameterized0' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlconvert__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+	Parameter din_width bound to: 16 - type: integer 
+	Parameter din_bin_pt bound to: 0 - type: integer 
+	Parameter din_arith bound to: 2 - type: integer 
+	Parameter dout_width bound to: 18 - type: integer 
+	Parameter dout_bin_pt bound to: 0 - type: integer 
+	Parameter dout_arith bound to: 2 - type: integer 
+	Parameter en_width bound to: 1 - type: integer 
+	Parameter en_bin_pt bound to: 0 - type: integer 
+	Parameter en_arith bound to: 1 - type: integer 
+	Parameter bool_conversion bound to: 0 - type: integer 
+	Parameter latency bound to: 0 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'convert_type__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 18 - type: integer 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter quantization bound to: 1 - type: integer 
+	Parameter overflow bound to: 1 - type: integer 
+	Parameter fp_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter fp_bin_pt bound to: 0 - type: integer 
+	Parameter fp_arith bound to: 2 - type: integer 
+	Parameter q_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter q_bin_pt bound to: 0 - type: integer 
+	Parameter q_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'cast__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+	Parameter old_width bound to: 16 - type: integer 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized2' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-638] synthesizing module 'trunc__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter old_bin_pt bound to: 0 - type: integer 
+	Parameter old_arith bound to: 2 - type: integer 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_bin_pt bound to: 0 - type: integer 
+	Parameter new_arith bound to: 2 - type: integer 
+	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
+	Parameter abs_right_of_dp bound to: 32'sb00000000000000000000000000000000 
+INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_arith bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
+	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlconvert__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:143]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlslice__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+	Parameter new_msb bound to: 31 - type: integer 
+	Parameter new_lsb bound to: 16 - type: integer 
+	Parameter x_width bound to: 32 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlslice__parameterized1' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_subsystem' (33#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:347]
+INFO: [Synth 8-638] synthesizing module 'syntheses_subsystem1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:445]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_d4ce6da086' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:248]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_d4ce6da086' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:248]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlslice__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+	Parameter new_msb bound to: 30 - type: integer 
+	Parameter new_lsb bound to: 15 - type: integer 
+	Parameter x_width bound to: 34 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlslice__parameterized2' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlslice__parameterized3' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+	Parameter new_msb bound to: 30 - type: integer 
+	Parameter new_lsb bound to: 15 - type: integer 
+	Parameter x_width bound to: 34 - type: integer 
+	Parameter y_width bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlslice__parameterized3' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_subsystem1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:445]
+INFO: [Synth 8-638] synthesizing module 'syntheses_subsystem2' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:505]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_737c6ebc01' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:261]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_737c6ebc01' (36#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:261]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_1e52d3a74c' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:269]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_1e52d3a74c' (37#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:269]
+INFO: [Synth 8-638] synthesizing module 'syntheses_xlcounter_free__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:356]
+	Parameter core_name0 bound to: syntheses_c_counter_binary_v12_0_1 - type: string 
+	Parameter op_width bound to: 4 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter oneStr bound to: 32'b00110001001100010011000100110001 
+INFO: [Synth 8-638] synthesizing module 'syntheses_c_counter_binary_v12_0_1' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_c_counter_binary_v12_0_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_c_counter_binary_v12_0_1' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_c_counter_binary_v12_0_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_xlcounter_free__parameterized0' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:356]
+WARNING: [Synth 8-350] instance 'counter' of module 'syntheses_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_73dbdd2749' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:277]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_73dbdd2749' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:277]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_423687f16e' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:340]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_423687f16e' (40#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:340]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_subsystem2' (41#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:505]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_83c7faa393ba9a5579d28bd87829549a' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:469]
+INFO: [Synth 8-638] synthesizing module 'syntheses_fir_compiler_v7_2_0' [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_fir_compiler_v7_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_fir_compiler_v7_2_0' (42#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/synth_1/.Xil/Vivado-19053-butch/realtime/syntheses_fir_compiler_v7_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_83c7faa393ba9a5579d28bd87829549a' (43#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses_entity_declarations.v:469]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_poly_phase_filter' (44#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:583]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_syntheses' (45#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:685]
+INFO: [Synth 8-256] done synthesizing module 'syntheses_struct' (46#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:761]
+INFO: [Synth 8-256] done synthesizing module 'syntheses' (47#1) [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:857]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 983.922 ; gain = 173.809 ; free physical = 811 ; free virtual = 9942
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[9] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[8] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[7] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[6] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[5] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[4] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:320]
+WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/sources_1/imports/sysgen/syntheses.v:548]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 983.922 ; gain = 173.809 ; free physical = 812 ; free virtual = 9942
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k410tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses_clock.xdc]
+Finished Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses_clock.xdc]
+Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses.xdc]
+Finished Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1352.773 ; gain = 0.000 ; free physical = 576 ; free virtual = 9707
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 575 ; free virtual = 9706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k410tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 575 ; free virtual = 9706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 575 ; free virtual = 9706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 568 ; free virtual = 9699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module saturation_arith 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+Module sysgen_delay_73dbdd2749 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1540 (col length:140)
+BRAMs: 1590 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 568 ; free virtual = 9699
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[7]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[6]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[5]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[4]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[3]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[2]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[1]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_addr_in[0]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[31]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[30]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[29]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[28]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[27]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[26]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[25]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[24]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[23]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[22]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[21]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[20]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[19]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[18]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[17]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[16]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[15]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[14]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[13]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[12]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[11]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[10]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[9]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[8]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[7]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[6]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[5]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[4]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[3]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[2]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[1]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_data_in[0]
+WARNING: [Synth 8-3331] design syntheses has unconnected port set_stb_in[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 561 ; free virtual = 9691
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 561 ; free virtual = 9691
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\syntheses_default_clock_driver/clockdriver/clr_reg/has_latency.fd_array[1].reg_comp_1/fd_prim_array[0].rst_comp.fdre_comp ) is unused and will be removed from module syntheses.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 545 ; free virtual = 9676
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 545 ; free virtual = 9676
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 545 ; free virtual = 9676
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 519 ; free virtual = 9650
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 519 ; free virtual = 9650
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9632
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------+----------+
+|      |BlackBox name                      |Instances |
++------+-----------------------------------+----------+
+|1     |syntheses_xfft_v9_0_0              |         1|
+|2     |syntheses_c_counter_binary_v12_0_0 |         1|
+|3     |syntheses_fir_compiler_v7_2_0      |         1|
+|4     |syntheses_c_counter_binary_v12_0_1 |         1|
++------+-----------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------+------+
+|      |Cell                               |Count |
++------+-----------------------------------+------+
+|1     |syntheses_c_counter_binary_v12_0_0 |     1|
+|2     |syntheses_c_counter_binary_v12_0_1 |     1|
+|3     |syntheses_fir_compiler_v7_2_0      |     1|
+|4     |syntheses_xfft_v9_0_0              |     1|
+|5     |LUT1                               |     2|
+|6     |LUT2                               |     1|
+|7     |LUT4                               |     1|
+|8     |LUT5                               |    31|
+|9     |LUT6                               |     2|
+|10    |FDRE                               |     1|
++------+-----------------------------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+----------------------------------------------------------+------+
+|      |Instance                                |Module                                                    |Cells |
++------+----------------------------------------+----------------------------------------------------------+------+
+|1     |top                                     |                                                          |   198|
+|2     |  syntheses_struct                      |syntheses_struct                                          |   198|
+|3     |    syntheses_x0                        |syntheses_syntheses                                       |   198|
+|4     |      fft                               |syntheses_fft                                             |    88|
+|5     |        ifft_fast_fourier_transform_8_1 |xlfast_fourier_transform_e88bcbd69f6fa35c516aded21de2b91c |    88|
+|6     |      last_handler                      |syntheses_last_handler                                    |    12|
+|7     |        counter                         |syntheses_xlcounter_free                                  |    12|
+|8     |      poly_phase_filter                 |syntheses_poly_phase_filter                               |    98|
+|9     |        fir_compiler_7_2_1              |xlfir_compiler_83c7faa393ba9a5579d28bd87829549a           |    90|
+|10    |        subsystem2                      |syntheses_subsystem2                                      |     8|
+|11    |          counter                       |syntheses_xlcounter_free__parameterized0                  |     6|
+|12    |          delay                         |sysgen_delay_73dbdd2749                                   |     2|
++------+----------------------------------------+----------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9631
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1352.773 ; gain = 57.285 ; free physical = 501 ; free virtual = 9631
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 542.660 ; free physical = 501 ; free virtual = 9631
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+140 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1352.773 ; gain = 434.141 ; free physical = 500 ; free virtual = 9631
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1352.773 ; gain = 0.000 ; free physical = 498 ; free virtual = 9629
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 10:14:51 2016...
+[Mon Apr 18 10:14:52 2016] synth_1 finished
+wait_on_run: Time (s): cpu = 00:09:52 ; elapsed = 00:10:22 . Memory (MB): peak = 1034.965 ; gain = 7.879 ; free physical = 1026 ; free virtual = 10156
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7k410tffg900-2
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_xfft_v9_0_0_synth_1/syntheses_xfft_v9_0_0.dcp' for cell 'syntheses_struct/syntheses_x0/fft/ifft_fast_fourier_transform_8_1/syntheses_xfft_v9_0_0_instance'
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_0_synth_1/syntheses_c_counter_binary_v12_0_0.dcp' for cell 'syntheses_struct/syntheses_x0/last_handler/counter/comp0.core_instance0'
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_fir_compiler_v7_2_0_synth_1/syntheses_fir_compiler_v7_2_0.dcp' for cell 'syntheses_struct/syntheses_x0/poly_phase_filter/fir_compiler_7_2_1/syntheses_fir_compiler_v7_2_0_instance'
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_1_synth_1/syntheses_c_counter_binary_v12_0_1.dcp' for cell 'syntheses_struct/syntheses_x0/poly_phase_filter/subsystem2/counter/comp1.core_instance1'
+INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7k410tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses.xdc]
+Finished Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.srcs/constrs_1/imports/sysgen/syntheses.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_xfft_v9_0_0_synth_1/syntheses_xfft_v9_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_0_synth_1/syntheses_c_counter_binary_v12_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_fir_compiler_v7_2_0_synth_1/syntheses_fir_compiler_v7_2_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/Synthesized Checkpoint/syntheses.runs/syntheses_c_counter_binary_v12_0_1_synth_1/syntheses_c_counter_binary_v12_0_1.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1427.352 ; gain = 392.387 ; free physical = 691 ; free virtual = 9822
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2027.098 ; gain = 599.746 ; free physical = 250 ; free virtual = 9404
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 10:15:19 2016...

@@ -1,0 +1,24 @@
+--------------------------------- Version Log ----------------------------------
+Version                                 Path
+System Generator 2015.2                 /opt/Xilinx/Vivado/2015.2
+Matlab 8.6.0.267246 (R2015b)            /usr/local/MATLAB/R2015b
+Vivado 2015.2                           /opt/Xilinx/Vivado/2015.2
+--------------------------------------------------------------------------------
+Summary of Errors:
+Error 0001: Illegal data type
+     Block: 'sim_model/synthese/fft/Convert'
+--------------------------------------------------------------------------------
+
+Error 0001:
+
+Reported by:
+  'sim_model/synthese/fft/Convert'
+
+Details:
+The only arithmetic type that can be converted to a boolean is an
+unsigned 1-bit integer --- i.e., a UFix_1_0.  For C-language
+style translation of other types to booleans, use a Relational
+block set to test for values not equal to zero.
+Error occurred during "Rate and Type Error Checking".
+
+--------------------------------------------------------------------------------
