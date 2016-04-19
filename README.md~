@@ -102,7 +102,9 @@ rebuild firmware
 
 # E. Known Issues
 
-Works fine so far. If you find any please report them to e33b1711@gmail.com ! 
+Always put a packet-resizer block behind the channelizer/ syntheses block(like in the example graphs) or you will get timeouts instead of output. Its someting about the tlast, i'll have to figure out.
+
+Always power cycle the USRP before restarting a GNURadio Graph. Otherwise the subchannels will be shifted. I need to figure out a way of internally resetting the computanial engines when restarting the transmission. 
 
 
 
