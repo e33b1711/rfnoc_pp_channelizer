@@ -485,57 +485,6 @@
     </param>
   </block>
   <block>
-    <key>uhd_rfnoc_streamer_packet_resizer</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>device_index</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>True</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(824, 339)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>uhd_rfnoc_streamer_packet_resizer_0</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>block_index</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>pkt_size</key>
-      <value>256</value>
-    </param>
-  </block>
-  <block>
     <key>uhd_rfnoc_streamer_radio</key>
     <param>
       <key>ant</key>
@@ -642,7 +591,7 @@
     </param>
     <param>
       <key>_enabled</key>
-      <value>True</value>
+      <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -772,14 +721,8 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>uhd_rfnoc_streamer_packet_resizer_0</source_block_id>
-    <sink_block_id>uhd_rfnoc_streamer_radio_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
     <source_block_id>uhd_rfnoc_streamer_syntheses_0</source_block_id>
-    <sink_block_id>uhd_rfnoc_streamer_packet_resizer_0</sink_block_id>
+    <sink_block_id>uhd_rfnoc_streamer_radio_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

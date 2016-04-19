@@ -1,38 +1,68 @@
 {
+  'Line_1001' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/axi_fifo',
+    'Instance' => 'axi_fifo',
+    'SimulinkInstance' => 'channelizer/channelizer/AXI FIFO'
+  },
+  'Line_1014' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/constant',
+    'Instance' => 'constant',
+    'SimulinkInstance' => 'channelizer/channelizer/Constant'
+  },
+  'Line_1020' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/inverter',
+    'Instance' => 'inverter',
+    'SimulinkInstance' => 'channelizer/channelizer/Inverter'
+  },
   'Line_1027' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'channelizer/channelizer/Logical'
+  },
+  'Line_1035' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/logical1',
+    'Instance' => 'logical1',
+    'SimulinkInstance' => 'channelizer/channelizer/Logical1'
+  },
+  'Line_1043' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/logical2',
+    'Instance' => 'logical2',
+    'SimulinkInstance' => 'channelizer/channelizer/Logical2'
+  },
+  'Line_1151' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0',
     'Instance' => 'channelizer_x0',
-    'SimulinkInstance' => 'channelizer'
+    'SimulinkInstance' => 'channelizer/channelizer'
   },
-  'Line_1039' => {
+  'Line_1167' => {
     'CodeInstance' => 'channelizer_struct/implementation_interface_in',
     'Instance' => 'implementation_interface_in',
-    'SimulinkInstance' => 'implementation_interface_in'
+    'SimulinkInstance' => 'channelizer/implementation_interface_in'
   },
-  'Line_1045' => {
+  'Line_1176' => {
     'CodeInstance' => 'channelizer_struct/implementation_interface_out',
     'Instance' => 'implementation_interface_out',
-    'SimulinkInstance' => 'implementation_interface_out'
-  },
-  'Line_1066' => {
-    'CodeInstance' => 'channelizer_default_clock_driver/clockdriver',
-    'Instance' => 'clockdriver',
-    'SimulinkInstance' => ''
-  },
-  'Line_1094' => {
-    'CodeInstance' => 'channelizer_default_clock_driver',
-    'Instance' => 'channelizer_default_clock_driver',
-    'SimulinkInstance' => ''
-  },
-  'Line_1101' => {
-    'CodeInstance' => 'channelizer_struct',
-    'Instance' => 'channelizer_struct',
-    'SimulinkInstance' => 'channelizer'
+    'SimulinkInstance' => 'channelizer/implementation_interface_out'
   },
   'Line_118' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem1/convert2',
     'Instance' => 'convert2',
     'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem1/Convert2'
+  },
+  'Line_1199' => {
+    'CodeInstance' => 'channelizer_default_clock_driver/clockdriver',
+    'Instance' => 'clockdriver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1227' => {
+    'CodeInstance' => 'channelizer_default_clock_driver',
+    'Instance' => 'channelizer_default_clock_driver',
+    'SimulinkInstance' => ''
+  },
+  'Line_1234' => {
+    'CodeInstance' => 'channelizer_struct',
+    'Instance' => 'channelizer_struct',
+    'SimulinkInstance' => 'channelizer'
   },
   'Line_126' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem1/reinterpret1',
@@ -47,12 +77,12 @@
   'Line_189' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem_x4',
     'Instance' => 'subsystem_x4',
-    'SimulinkInstance' => 'channelizer/fft1/Subsystem'
+    'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem'
   },
   'Line_194' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem1',
     'Instance' => 'subsystem1',
-    'SimulinkInstance' => 'channelizer/fft1/Subsystem1'
+    'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem1'
   },
   'Line_20' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem_x4/reinterpret',
@@ -134,194 +164,214 @@
     'Instance' => 'slice',
     'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem/Slice'
   },
-  'Line_414' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/last_handler/constant',
-    'Instance' => 'constant',
-    'SimulinkInstance' => 'channelizer/channelizer/last_handler/Constant'
-  },
-  'Line_425' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/last_handler/counter',
-    'Instance' => 'counter',
-    'SimulinkInstance' => 'channelizer/channelizer/last_handler/Counter'
-  },
-  'Line_433' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/last_handler/logical',
-    'Instance' => 'logical',
-    'SimulinkInstance' => 'channelizer/channelizer/last_handler/Logical'
-  },
-  'Line_441' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/last_handler/relational',
-    'Instance' => 'relational',
-    'SimulinkInstance' => 'channelizer/channelizer/last_handler/Relational'
-  },
-  'Line_485' => {
+  'Line_421' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/convert',
     'Instance' => 'convert',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Convert'
+  },
+  'Line_441' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/convert1',
+    'Instance' => 'convert1',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Convert1'
+  },
+  'Line_449' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/reinterpret',
+    'Instance' => 'reinterpret',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Reinterpret'
+  },
+  'Line_456' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/reinterpret3',
+    'Instance' => 'reinterpret3',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Reinterpret3'
+  },
+  'Line_469' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/lower',
+    'Instance' => 'lower',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/lower'
+  },
+  'Line_479' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/upper',
+    'Instance' => 'upper',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/upper'
   },
   'Line_50' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem_x4/slice1',
     'Instance' => 'slice1',
     'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem/Slice1'
   },
-  'Line_505' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/convert1',
-    'Instance' => 'convert1',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Convert1'
-  },
-  'Line_513' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/reinterpret',
-    'Instance' => 'reinterpret',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Reinterpret'
-  },
-  'Line_520' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/reinterpret3',
-    'Instance' => 'reinterpret3',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/Reinterpret3'
-  },
-  'Line_533' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/lower',
-    'Instance' => 'lower',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/lower'
-  },
-  'Line_543' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4/upper',
-    'Instance' => 'upper',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem/upper'
-  },
-  'Line_565' => {
+  'Line_501' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1/concat',
     'Instance' => 'concat',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1/Concat'
   },
-  'Line_573' => {
+  'Line_509' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1/reinterpret1',
     'Instance' => 'reinterpret1',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1/Reinterpret1'
   },
-  'Line_580' => {
+  'Line_516' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1/reinterpret2',
     'Instance' => 'reinterpret2',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1/Reinterpret2'
   },
-  'Line_593' => {
+  'Line_529' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1/slice',
     'Instance' => 'slice',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1/Slice'
   },
-  'Line_603' => {
+  'Line_539' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1/slice1',
     'Instance' => 'slice1',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1/Slice1'
   },
-  'Line_636' => {
+  'Line_572' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/constant',
     'Instance' => 'constant',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Constant'
   },
-  'Line_642' => {
+  'Line_578' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/constant1',
     'Instance' => 'constant1',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Constant1'
   },
-  'Line_653' => {
+  'Line_589' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/counter',
     'Instance' => 'counter',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Counter'
   },
-  'Line_661' => {
+  'Line_597' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/delay',
     'Instance' => 'delay',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Delay'
   },
-  'Line_670' => {
+  'Line_606' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/inverter',
     'Instance' => 'inverter',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Inverter'
   },
-  'Line_677' => {
+  'Line_613' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/relational',
     'Instance' => 'relational',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2/Relational'
   },
-  'Line_711' => {
+  'Line_647' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/constant',
     'Instance' => 'constant',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem3/Constant'
   },
-  'Line_722' => {
+  'Line_658' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/counter',
     'Instance' => 'counter',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem3/Counter'
   },
-  'Line_730' => {
+  'Line_666' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/logical',
     'Instance' => 'logical',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem3/Logical'
   },
-  'Line_738' => {
+  'Line_674' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/relational',
     'Instance' => 'relational',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem3/Relational'
+  },
+  'Line_734' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4',
+    'Instance' => 'subsystem_x4',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem'
+  },
+  'Line_741' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1',
+    'Instance' => 'subsystem1',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem1'
+  },
+  'Line_746' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2',
+    'Instance' => 'subsystem2',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem2'
+  },
+  'Line_755' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3',
+    'Instance' => 'subsystem3',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Subsystem3'
+  },
+  'Line_763' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/fir_compiler_7_2_1',
+    'Instance' => 'fir_compiler_7_2_1',
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/FIR Compiler 7.2 1'
   },
   'Line_78' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem1/concat',
     'Instance' => 'concat',
     'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem1/Concat'
   },
-  'Line_795' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem_x4',
-    'Instance' => 'subsystem_x4',
-    'SimulinkInstance' => 'channelizer/poly_phase_filter/Subsystem'
-  },
-  'Line_802' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem1',
-    'Instance' => 'subsystem1',
-    'SimulinkInstance' => 'channelizer/poly_phase_filter/Subsystem1'
-  },
-  'Line_807' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2',
-    'Instance' => 'subsystem2',
-    'SimulinkInstance' => 'channelizer/poly_phase_filter/Subsystem2'
-  },
-  'Line_816' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3',
-    'Instance' => 'subsystem3',
-    'SimulinkInstance' => 'channelizer/poly_phase_filter/Subsystem3'
-  },
-  'Line_824' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/fir_compiler_7_2_1',
-    'Instance' => 'fir_compiler_7_2_1',
-    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/FIR Compiler 7.2 1'
-  },
-  'Line_849' => {
+  'Line_788' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter/inverter',
     'Instance' => 'inverter',
     'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter/Inverter'
   },
-  'Line_898' => {
+  'Line_822' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/constant',
+    'Instance' => 'constant',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Constant'
+  },
+  'Line_833' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/counter',
+    'Instance' => 'counter',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Counter'
+  },
+  'Line_841' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/delay',
+    'Instance' => 'delay',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Delay'
+  },
+  'Line_850' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/logical',
+    'Instance' => 'logical',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Logical'
+  },
+  'Line_858' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/relational',
+    'Instance' => 'relational',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Relational'
+  },
+  'Line_866' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/relational1',
+    'Instance' => 'relational1',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/Relational1'
+  },
+  'Line_874' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/address',
+    'Instance' => 'address',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/address'
+  },
+  'Line_880' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register/address1',
+    'Instance' => 'address1',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register/address1'
+  },
+  'Line_948' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1',
     'Instance' => 'fft1',
-    'SimulinkInstance' => 'channelizer/fft1'
+    'SimulinkInstance' => 'channelizer/channelizer/fft1'
   },
-  'Line_910' => {
+  'Line_960' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/frame_reverse',
     'Instance' => 'frame_reverse',
-    'SimulinkInstance' => 'channelizer/frame_reverse'
+    'SimulinkInstance' => 'channelizer/channelizer/frame_reverse'
   },
-  'Line_922' => {
-    'CodeInstance' => 'channelizer_struct/channelizer_x0/last_handler',
-    'Instance' => 'last_handler',
-    'SimulinkInstance' => 'channelizer/last_handler'
-  },
-  'Line_931' => {
+  'Line_972' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/poly_phase_filter',
     'Instance' => 'poly_phase_filter',
-    'SimulinkInstance' => 'channelizer/poly_phase_filter'
+    'SimulinkInstance' => 'channelizer/channelizer/poly_phase_filter'
   },
   'Line_98' => {
     'CodeInstance' => 'channelizer_struct/channelizer_x0/fft1/subsystem1/convert',
     'Instance' => 'convert',
     'SimulinkInstance' => 'channelizer/channelizer/fft1/Subsystem1/Convert'
+  },
+  'Line_985' => {
+    'CodeInstance' => 'channelizer_struct/channelizer_x0/reset_register',
+    'Instance' => 'reset_register',
+    'SimulinkInstance' => 'channelizer/channelizer/reset_register'
   }
 }

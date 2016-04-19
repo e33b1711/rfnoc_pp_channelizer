@@ -42,13 +42,13 @@ namespace eval ::xilinx::dsp::planaheaddriver {
 		{{channelizer.htm}}
 	}
 	set SimPeriod 1
-	set SimTime 50000
-	set SimulationTime {250205.00000000 ns}
+	set SimTime 100000
+	set SimulationTime {500205.00000000 ns}
 	set SynthStrategyName {Vivado Synthesis Defaults}
 	set SynthesisTool {Vivado}
 	set TargetDir {/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint}
 	set TopLevelModule {channelizer}
-	set TopLevelSimulinkHandle 3529.01
+	set TopLevelSimulinkHandle 2.16711
 	set TopLevelPortInterface {}
 	dict set TopLevelPortInterface ready_out Name {ready_out}
 	dict set TopLevelPortInterface ready_out Type Bool

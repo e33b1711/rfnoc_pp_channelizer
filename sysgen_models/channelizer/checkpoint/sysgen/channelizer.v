@@ -3,7 +3,7 @@
 `endif
 
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/fft1/Subsystem
+// Generated from Simulink block channelizer/channelizer/fft1/Subsystem
 module channelizer_subsystem_x0 (
   input [32-1:0] in1,
   output [16-1:0] imag,
@@ -53,7 +53,7 @@ module channelizer_subsystem_x0 (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/fft1/Subsystem1
+// Generated from Simulink block channelizer/channelizer/fft1/Subsystem1
 module channelizer_subsystem1_x0 (
   input [21-1:0] imag,
   input [21-1:0] real_x0,
@@ -139,7 +139,7 @@ module channelizer_subsystem1_x0 (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/fft1
+// Generated from Simulink block channelizer/channelizer/fft1
 module channelizer_fft1 (
   input [1-1:0] ready_out,
   input [1-1:0] valid_in,
@@ -156,10 +156,10 @@ module channelizer_fft1 (
   wire ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
   wire [32-1:0] concat_y_net;
   wire [1-1:0] ready_out_net;
-  wire [1-1:0] logical_y_net;
+  wire [1-1:0] logical_y_net_x0;
   wire [32-1:0] dual_port_ram_doutb_net;
   wire [1-1:0] delay1_q_net;
-  wire [1-1:0] reset_in_net;
+  wire [1-1:0] logical_y_net;
   wire clk_net;
   wire ce_net;
   wire [16-1:0] reinterpret1_output_port_net;
@@ -180,10 +180,10 @@ module channelizer_fft1 (
   assign valid_out = ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
   assign data_out = concat_y_net;
   assign ready_out_net = ready_out;
-  assign logical_y_net = valid_in;
+  assign logical_y_net_x0 = valid_in;
   assign dual_port_ram_doutb_net = data_in;
   assign delay1_q_net = last_in;
-  assign reset_in_net = reset_in;
+  assign logical_y_net = reset_in;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   channelizer_subsystem_x0 subsystem_x4 (
@@ -209,7 +209,7 @@ module channelizer_fft1 (
     .s_axis_config_tvalid(ifft_fast_fourier_transform_8_1_s_axis_config_tready_net),
     .s_axis_data_tdata_xn_im_0(reinterpret1_output_port_net),
     .s_axis_data_tdata_xn_re_0(reinterpret_output_port_net),
-    .s_axis_data_tvalid(logical_y_net),
+    .s_axis_data_tvalid(logical_y_net_x0),
     .s_axis_data_tlast(delay1_q_net),
     .m_axis_data_tready(ready_out_net),
     .rst(inverter_op_net),
@@ -230,14 +230,14 @@ module channelizer_fft1 (
   );
   sysgen_inverter_dea83a2b38 inverter (
     .clr(1'b0),
-    .ip(reset_in_net),
+    .ip(logical_y_net),
     .clk(clk_net),
     .ce(ce_net),
     .op(inverter_op_net)
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/frame_reverse
+// Generated from Simulink block channelizer/channelizer/frame_reverse
 module channelizer_frame_reverse (
   input ready_out,
   input valid_in,
@@ -252,14 +252,14 @@ module channelizer_frame_reverse (
 );
   wire ce_net;
   wire [1-1:0] constant1_op_net;
-  wire [1-1:0] logical_y_net;
+  wire [1-1:0] logical_y_net_x0;
   wire [32-1:0] dual_port_ram_doutb_net;
   wire [1-1:0] delay1_q_net;
   wire ifft_fast_fourier_transform_8_1_s_axis_data_tready_net;
   wire fir_compiler_7_2_1_m_axis_data_tvalid_net;
   wire [32-1:0] concat_y_net;
   wire fir_compiler_7_2_1_m_axis_data_tlast_net;
-  wire [1-1:0] reset_in_net;
+  wire [1-1:0] logical_y_net;
   wire clk_net;
   wire [32-1:0] constant_op_net;
   wire [1-1:0] constant2_op_net;
@@ -268,14 +268,14 @@ module channelizer_frame_reverse (
   wire [5-1:0] counter2_op_net;
   wire [1-1:0] delay_q_net;
   wire [32-1:0] dual_port_ram_douta_net;
-  assign valid_out = logical_y_net;
+  assign valid_out = logical_y_net_x0;
   assign data_out = dual_port_ram_doutb_net;
   assign last_out = delay1_q_net;
   assign ifft_fast_fourier_transform_8_1_s_axis_data_tready_net = ready_out;
   assign fir_compiler_7_2_1_m_axis_data_tvalid_net = valid_in;
   assign concat_y_net = data_in;
   assign fir_compiler_7_2_1_m_axis_data_tlast_net = last_in;
-  assign reset_in_net = reset_in;
+  assign logical_y_net = reset_in;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   sysgen_constant_ff57ff80b6 constant (
@@ -303,7 +303,7 @@ module channelizer_frame_reverse (
   )
   counter (
     .clr(1'b0),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(logical1_y_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -316,7 +316,7 @@ module channelizer_frame_reverse (
   )
   counter2 (
     .clr(1'b0),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(logical1_y_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -325,7 +325,7 @@ module channelizer_frame_reverse (
   sysgen_delay_2640a39ee9 delay (
     .clr(1'b0),
     .d(constant2_op_net),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(logical1_y_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -334,7 +334,7 @@ module channelizer_frame_reverse (
   sysgen_delay_52cccd8896 delay1 (
     .clr(1'b0),
     .d(fir_compiler_7_2_1_m_axis_data_tlast_net),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(logical1_y_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -355,8 +355,8 @@ module channelizer_frame_reverse (
     .addrb(counter2_op_net),
     .dinb(constant_op_net),
     .web(constant1_op_net),
-    .rsta(reset_in_net),
-    .rstb(reset_in_net),
+    .rsta(logical_y_net),
+    .rstb(logical_y_net),
     .ena(logical1_y_net),
     .enb(logical1_y_net),
     .a_clk(clk_net),
@@ -372,7 +372,7 @@ module channelizer_frame_reverse (
     .clr(1'b0),
     .d0(delay_q_net),
     .d1(fir_compiler_7_2_1_m_axis_data_tvalid_net),
-    .y(logical_y_net)
+    .y(logical_y_net_x0)
   );
   sysgen_logical_f9d74a72d1 logical1 (
     .clk(1'b0),
@@ -384,71 +384,7 @@ module channelizer_frame_reverse (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/last_handler
-module channelizer_last_handler (
-  input [1-1:0] ready_out,
-  input valid_in,
-  input [32-1:0] data_in,
-  input [1-1:0] reset_in,
-  input clk_1,
-  input ce_1,
-  output [1-1:0] last_out
-);
-  wire [1-1:0] relational_op_net;
-  wire [1-1:0] ready_out_net;
-  wire ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
-  wire [32-1:0] concat_y_net;
-  wire [1-1:0] reset_in_net;
-  wire clk_net;
-  wire ce_net;
-  wire [10-1:0] constant_op_net;
-  wire [10-1:0] counter_op_net;
-  wire [1-1:0] logical_y_net;
-  assign last_out = relational_op_net;
-  assign ready_out_net = ready_out;
-  assign ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net = valid_in;
-  assign concat_y_net = data_in;
-  assign reset_in_net = reset_in;
-  assign clk_net = clk_1;
-  assign ce_net = ce_1;
-  sysgen_constant_9ceded7773 constant (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .op(constant_op_net)
-  );
-  channelizer_xlcounter_free #(
-    .core_name0("channelizer_c_counter_binary_v12_0_2"),
-    .op_arith(`xlUnsigned),
-    .op_width(10)
-  )
-  counter (
-    .clr(1'b0),
-    .rst(reset_in_net),
-    .en(logical_y_net),
-    .clk(clk_net),
-    .ce(ce_net),
-    .op(counter_op_net)
-  );
-  sysgen_logical_f9d74a72d1 logical (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .d0(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
-    .d1(ready_out_net),
-    .y(logical_y_net)
-  );
-  sysgen_relational_765ebec234 relational (
-    .clk(1'b0),
-    .ce(1'b0),
-    .clr(1'b0),
-    .a(constant_op_net),
-    .b(counter_op_net),
-    .op(relational_op_net)
-  );
-endmodule
-`timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/poly_phase_filter/Subsystem
+// Generated from Simulink block channelizer/channelizer/poly_phase_filter/Subsystem
 module channelizer_subsystem (
   input [32-1:0] in1,
   input clk_1,
@@ -456,12 +392,12 @@ module channelizer_subsystem (
   output [18-1:0] imag,
   output [18-1:0] real_x0
 );
-  wire [16-1:0] reinterpret3_output_port_net;
   wire [18-1:0] convert_dout_net;
   wire [18-1:0] convert1_dout_net;
   wire [32-1:0] data_in_net;
   wire clk_net;
   wire ce_net;
+  wire [16-1:0] reinterpret3_output_port_net;
   wire [16-1:0] reinterpret_output_port_net;
   wire [16-1:0] lower_y_net;
   wire [16-1:0] upper_y_net;
@@ -546,7 +482,7 @@ module channelizer_subsystem (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/poly_phase_filter/Subsystem1
+// Generated from Simulink block channelizer/channelizer/poly_phase_filter/Subsystem1
 module channelizer_subsystem1 (
   input [34-1:0] imag,
   input [34-1:0] real_x0,
@@ -606,7 +542,7 @@ module channelizer_subsystem1 (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/poly_phase_filter/Subsystem2
+// Generated from Simulink block channelizer/channelizer/poly_phase_filter/Subsystem2
 module channelizer_subsystem2 (
   input ready_in,
   input [1-1:0] reset_in,
@@ -616,13 +552,13 @@ module channelizer_subsystem2 (
   output [1-1:0] last_out,
   output [4-1:0] data_out
 );
-  wire [1-1:0] inverter_op_net;
   wire [1-1:0] relational_op_net;
   wire [4-1:0] counter_op_net;
   wire fir_compiler_7_2_1_s_axis_config_tready_net;
-  wire [1-1:0] reset_in_net;
+  wire [1-1:0] logical_y_net;
   wire clk_net;
   wire ce_net;
+  wire [1-1:0] inverter_op_net;
   wire [4-1:0] constant_op_net;
   wire [1-1:0] constant1_op_net;
   wire [1-1:0] delay_q_net;
@@ -630,7 +566,7 @@ module channelizer_subsystem2 (
   assign last_out = relational_op_net;
   assign data_out = counter_op_net;
   assign fir_compiler_7_2_1_s_axis_config_tready_net = ready_in;
-  assign reset_in_net = reset_in;
+  assign logical_y_net = reset_in;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   sysgen_constant_1aff05159a constant (
@@ -646,13 +582,13 @@ module channelizer_subsystem2 (
     .op(constant1_op_net)
   );
   channelizer_xlcounter_free #(
-    .core_name0("channelizer_c_counter_binary_v12_0_3"),
+    .core_name0("channelizer_c_counter_binary_v12_0_2"),
     .op_arith(`xlUnsigned),
     .op_width(4)
   )
   counter (
     .clr(1'b0),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(fir_compiler_7_2_1_s_axis_config_tready_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -661,7 +597,7 @@ module channelizer_subsystem2 (
   sysgen_delay_52cccd8896 delay (
     .clr(1'b0),
     .d(constant1_op_net),
-    .rst(reset_in_net),
+    .rst(logical_y_net),
     .en(relational_op_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -684,7 +620,7 @@ module channelizer_subsystem2 (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/poly_phase_filter/Subsystem3
+// Generated from Simulink block channelizer/channelizer/poly_phase_filter/Subsystem3
 module channelizer_subsystem3 (
   input ready,
   input [1-1:0] reset_in,
@@ -695,7 +631,7 @@ module channelizer_subsystem3 (
 );
   wire [1-1:0] relational_op_net;
   wire fir_compiler_7_2_1_s_axis_data_tready_net;
-  wire [1-1:0] reset_in_net;
+  wire [1-1:0] logical_y_net_x0;
   wire [1-1:0] valid_in_net;
   wire clk_net;
   wire ce_net;
@@ -704,7 +640,7 @@ module channelizer_subsystem3 (
   wire [1-1:0] logical_y_net;
   assign last_out = relational_op_net;
   assign fir_compiler_7_2_1_s_axis_data_tready_net = ready;
-  assign reset_in_net = reset_in;
+  assign logical_y_net_x0 = reset_in;
   assign valid_in_net = valid;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
@@ -715,13 +651,13 @@ module channelizer_subsystem3 (
     .op(constant_op_net)
   );
   channelizer_xlcounter_free #(
-    .core_name0("channelizer_c_counter_binary_v12_0_3"),
+    .core_name0("channelizer_c_counter_binary_v12_0_2"),
     .op_arith(`xlUnsigned),
     .op_width(4)
   )
   counter (
     .clr(1'b0),
-    .rst(reset_in_net),
+    .rst(logical_y_net_x0),
     .en(logical_y_net),
     .clk(clk_net),
     .ce(ce_net),
@@ -745,11 +681,12 @@ module channelizer_subsystem3 (
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer/poly_phase_filter
+// Generated from Simulink block channelizer/channelizer/poly_phase_filter
 module channelizer_poly_phase_filter (
   input ready_out,
   input [1-1:0] valid_in,
   input [32-1:0] data_in,
+  input [1-1:0] last_in,
   input [1-1:0] reset_in,
   input clk_1,
   input ce_1,
@@ -758,11 +695,6 @@ module channelizer_poly_phase_filter (
   output [32-1:0] data_out,
   output last_out
 );
-  wire fir_compiler_7_2_1_event_s_data_tlast_missing_net;
-  wire fir_compiler_7_2_1_event_s_data_tlast_unexpected_net;
-  wire fir_compiler_7_2_1_event_s_config_tlast_missing_net;
-  wire fir_compiler_7_2_1_event_s_config_tlast_unexpected_net;
-  wire inverter_op_net;
   wire fir_compiler_7_2_1_s_axis_data_tready_net;
   wire fir_compiler_7_2_1_m_axis_data_tvalid_net;
   wire [32-1:0] concat_y_net;
@@ -770,7 +702,8 @@ module channelizer_poly_phase_filter (
   wire ifft_fast_fourier_transform_8_1_s_axis_data_tready_net;
   wire [1-1:0] valid_in_net;
   wire [32-1:0] data_in_net;
-  wire [1-1:0] reset_in_net;
+  wire [1-1:0] last_in_net;
+  wire [1-1:0] logical_y_net;
   wire clk_net;
   wire ce_net;
   wire [18-1:0] convert_dout_net;
@@ -782,6 +715,11 @@ module channelizer_poly_phase_filter (
   wire [4-1:0] counter_op_net;
   wire fir_compiler_7_2_1_s_axis_config_tready_net;
   wire [1-1:0] relational_op_net_x0;
+  wire fir_compiler_7_2_1_event_s_data_tlast_missing_net;
+  wire fir_compiler_7_2_1_event_s_data_tlast_unexpected_net;
+  wire fir_compiler_7_2_1_event_s_config_tlast_missing_net;
+  wire fir_compiler_7_2_1_event_s_config_tlast_unexpected_net;
+  wire inverter_op_net;
   assign ready_in = fir_compiler_7_2_1_s_axis_data_tready_net;
   assign valid_out = fir_compiler_7_2_1_m_axis_data_tvalid_net;
   assign data_out = concat_y_net;
@@ -789,7 +727,8 @@ module channelizer_poly_phase_filter (
   assign ifft_fast_fourier_transform_8_1_s_axis_data_tready_net = ready_out;
   assign valid_in_net = valid_in;
   assign data_in_net = data_in;
-  assign reset_in_net = reset_in;
+  assign last_in_net = last_in;
+  assign logical_y_net = reset_in;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   channelizer_subsystem subsystem_x4 (
@@ -806,7 +745,7 @@ module channelizer_poly_phase_filter (
   );
   channelizer_subsystem2 subsystem2 (
     .ready_in(fir_compiler_7_2_1_s_axis_config_tready_net),
-    .reset_in(reset_in_net),
+    .reset_in(logical_y_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
     .valid_out(inverter_op_net_x0),
@@ -815,7 +754,7 @@ module channelizer_poly_phase_filter (
   );
   channelizer_subsystem3 subsystem3 (
     .ready(fir_compiler_7_2_1_s_axis_data_tready_net),
-    .reset_in(reset_in_net),
+    .reset_in(logical_y_net),
     .valid(valid_in_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
@@ -848,134 +787,318 @@ module channelizer_poly_phase_filter (
   );
   sysgen_inverter_dea83a2b38 inverter (
     .clr(1'b0),
-    .ip(reset_in_net),
+    .ip(logical_y_net),
     .clk(clk_net),
     .ce(ce_net),
     .op(inverter_op_net)
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block channelizer
+// Generated from Simulink block channelizer/channelizer/reset_register
+module channelizer_reset_register (
+  input [1-1:0] set_stb,
+  input [8-1:0] set_addr,
+  input clk_1,
+  input ce_1,
+  output [1-1:0] reset_out
+);
+  wire [1-1:0] delay_q_net;
+  wire [1-1:0] set_stb_in_net;
+  wire [8-1:0] set_addr_in_net;
+  wire clk_net;
+  wire ce_net;
+  wire [1-1:0] constant_op_net;
+  wire [2-1:0] counter_op_net;
+  wire [1-1:0] relational1_op_net;
+  wire [1-1:0] logical_y_net;
+  wire [1-1:0] relational_op_net;
+  wire [8-1:0] address_op_net;
+  wire [2-1:0] address1_op_net;
+  assign reset_out = delay_q_net;
+  assign set_stb_in_net = set_stb;
+  assign set_addr_in_net = set_addr;
+  assign clk_net = clk_1;
+  assign ce_net = ce_1;
+  sysgen_constant_fa8d4b3e6d constant (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .op(constant_op_net)
+  );
+  channelizer_xlcounter_free #(
+    .core_name0("channelizer_c_counter_binary_v12_0_3"),
+    .op_arith(`xlUnsigned),
+    .op_width(2)
+  )
+  counter (
+    .clr(1'b0),
+    .rst(relational1_op_net),
+    .en(delay_q_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .op(counter_op_net)
+  );
+  sysgen_delay_52cccd8896 delay (
+    .clr(1'b0),
+    .d(constant_op_net),
+    .rst(relational1_op_net),
+    .en(logical_y_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .q(delay_q_net)
+  );
+  sysgen_logical_f9d74a72d1 logical (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(set_stb_in_net),
+    .d1(relational_op_net),
+    .y(logical_y_net)
+  );
+  sysgen_relational_fc1426e2d9 relational (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .a(set_addr_in_net),
+    .b(address_op_net),
+    .op(relational_op_net)
+  );
+  sysgen_relational_9133ff9c4b relational1 (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .a(counter_op_net),
+    .b(address1_op_net),
+    .op(relational1_op_net)
+  );
+  sysgen_constant_07b701207a address (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .op(address_op_net)
+  );
+  sysgen_constant_118900d9b9 address1 (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .op(address1_op_net)
+  );
+endmodule
+`timescale 1 ns / 10 ps
+// Generated from Simulink block channelizer/channelizer
 module channelizer_channelizer (
   input [1-1:0] ready_out,
   input [1-1:0] valid_in,
   input [32-1:0] data_in,
+  input [1-1:0] last_in,
   input [1-1:0] reset_in,
+  input [1-1:0] set_stb_in,
+  input [8-1:0] set_addr_in,
   input clk_1,
   input ce_1,
   output ready_in,
   output valid_out,
   output [32-1:0] data_out,
-  output [1-1:0] last_out
+  output last_out,
+  output [1-1:0] reset_out
 );
   wire fir_compiler_7_2_1_s_axis_data_tready_net;
   wire ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
-  wire [32-1:0] concat_y_net;
-  wire [1-1:0] relational_op_net;
+  wire [32-1:0] concat_y_net_x0;
+  wire axi_fifo_m_axis_tlast_net;
+  wire [1-1:0] logical_y_net;
   wire [1-1:0] ready_out_net;
   wire [1-1:0] valid_in_net;
   wire [32-1:0] data_in_net;
+  wire [1-1:0] last_in_net;
   wire [1-1:0] reset_in_net;
+  wire [1-1:0] set_stb_in_net;
+  wire [8-1:0] set_addr_in_net;
   wire clk_net;
   wire ce_net;
   wire ifft_fast_fourier_transform_8_1_s_axis_data_tready_net;
-  wire [1-1:0] logical_y_net;
+  wire [1-1:0] logical_y_net_x0;
   wire [32-1:0] dual_port_ram_doutb_net;
   wire [1-1:0] delay1_q_net;
   wire fir_compiler_7_2_1_m_axis_data_tvalid_net;
-  wire [32-1:0] concat_y_net_x0;
+  wire [32-1:0] concat_y_net;
   wire fir_compiler_7_2_1_m_axis_data_tlast_net;
+  wire [1-1:0] delay_q_net;
+  wire axi_fifo_m_axis_tvalid_net;
+  wire [8-1:0] axi_fifo_m_axis_tdata_net;
+  wire axi_fifo_s_axis_tready_net;
+  wire inverter_op_net;
+  wire logical2_y_net;
+  wire logical1_y_net;
+  wire [8-1:0] constant_op_net;
   assign ready_in = fir_compiler_7_2_1_s_axis_data_tready_net;
   assign valid_out = ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
-  assign data_out = concat_y_net;
-  assign last_out = relational_op_net;
+  assign data_out = concat_y_net_x0;
+  assign last_out = axi_fifo_m_axis_tlast_net;
+  assign reset_out = logical_y_net;
   assign ready_out_net = ready_out;
   assign valid_in_net = valid_in;
   assign data_in_net = data_in;
+  assign last_in_net = last_in;
   assign reset_in_net = reset_in;
+  assign set_stb_in_net = set_stb_in;
+  assign set_addr_in_net = set_addr_in;
   assign clk_net = clk_1;
   assign ce_net = ce_1;
   channelizer_fft1 fft1 (
     .ready_out(ready_out_net),
-    .valid_in(logical_y_net),
+    .valid_in(logical_y_net_x0),
     .data_in(dual_port_ram_doutb_net),
     .last_in(delay1_q_net),
-    .reset_in(reset_in_net),
+    .reset_in(logical_y_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
     .ready_in(ifft_fast_fourier_transform_8_1_s_axis_data_tready_net),
     .valid_out(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
-    .data_out(concat_y_net)
+    .data_out(concat_y_net_x0)
   );
   channelizer_frame_reverse frame_reverse (
     .ready_out(ifft_fast_fourier_transform_8_1_s_axis_data_tready_net),
     .valid_in(fir_compiler_7_2_1_m_axis_data_tvalid_net),
-    .data_in(concat_y_net_x0),
+    .data_in(concat_y_net),
     .last_in(fir_compiler_7_2_1_m_axis_data_tlast_net),
-    .reset_in(reset_in_net),
+    .reset_in(logical_y_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
-    .valid_out(logical_y_net),
+    .valid_out(logical_y_net_x0),
     .data_out(dual_port_ram_doutb_net),
     .last_out(delay1_q_net)
-  );
-  channelizer_last_handler last_handler (
-    .ready_out(ready_out_net),
-    .valid_in(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
-    .data_in(concat_y_net),
-    .reset_in(reset_in_net),
-    .clk_1(clk_net),
-    .ce_1(ce_net),
-    .last_out(relational_op_net)
   );
   channelizer_poly_phase_filter poly_phase_filter (
     .ready_out(ifft_fast_fourier_transform_8_1_s_axis_data_tready_net),
     .valid_in(valid_in_net),
     .data_in(data_in_net),
-    .reset_in(reset_in_net),
+    .last_in(last_in_net),
+    .reset_in(logical_y_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
     .ready_in(fir_compiler_7_2_1_s_axis_data_tready_net),
     .valid_out(fir_compiler_7_2_1_m_axis_data_tvalid_net),
-    .data_out(concat_y_net_x0),
+    .data_out(concat_y_net),
     .last_out(fir_compiler_7_2_1_m_axis_data_tlast_net)
+  );
+  channelizer_reset_register reset_register (
+    .set_stb(set_stb_in_net),
+    .set_addr(set_addr_in_net),
+    .clk_1(clk_net),
+    .ce_1(ce_net),
+    .reset_out(delay_q_net)
+  );
+  channelizer_xlaxififogen #(
+    .core_name0("channelizer_fifo_generator_v12_0_0"),
+    .depth_bits(13),
+    .has_aresetn(1),
+    .tdata_width(8),
+    .tdest_width(4),
+    .tid_width(8),
+    .tuser_width(4)
+  )
+  axi_fifo (
+    .aresetn(inverter_op_net),
+    .m_axis_tready(logical2_y_net),
+    .s_axis_tvalid(logical1_y_net),
+    .s_axis_tdata(constant_op_net),
+    .s_axis_tlast(last_in_net),
+    .s_aclk(clk_net),
+    .ce(ce_net),
+    .m_axis_tvalid(axi_fifo_m_axis_tvalid_net),
+    .m_axis_tdata(axi_fifo_m_axis_tdata_net),
+    .m_axis_tlast(axi_fifo_m_axis_tlast_net),
+    .s_axis_tready(axi_fifo_s_axis_tready_net)
+  );
+  sysgen_constant_828adcadae constant (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .op(constant_op_net)
+  );
+  sysgen_inverter_dea83a2b38 inverter (
+    .clr(1'b0),
+    .ip(logical_y_net),
+    .clk(clk_net),
+    .ce(ce_net),
+    .op(inverter_op_net)
+  );
+  sysgen_logical_8b7810a2aa logical (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(delay_q_net),
+    .d1(reset_in_net),
+    .y(logical_y_net)
+  );
+  sysgen_logical_f9d74a72d1 logical1 (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(fir_compiler_7_2_1_s_axis_data_tready_net),
+    .d1(valid_in_net),
+    .y(logical1_y_net)
+  );
+  sysgen_logical_f9d74a72d1 logical2 (
+    .clk(1'b0),
+    .ce(1'b0),
+    .clr(1'b0),
+    .d0(ready_out_net),
+    .d1(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
+    .y(logical2_y_net)
   );
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block implementation_interface_in
+// Generated from Simulink block channelizer/implementation_interface_in
 module channelizer_implementation_interface_in (
   input ready_out,
   input [32-1:0] data_in,
+  input [1-1:0] last_in,
   input [1-1:0] reset_in,
+  input [8-1:0] set_addr_in,
+  input [1-1:0] set_stb_in,
   input [1-1:0] valid_in
 );
   wire fir_compiler_7_2_1_s_axis_data_tready_net;
   wire [32-1:0] data_in_net;
+  wire [1-1:0] last_in_net;
   wire [1-1:0] reset_in_net;
+  wire [8-1:0] set_addr_in_net;
+  wire [1-1:0] set_stb_in_net;
   wire [1-1:0] valid_in_net;
   assign fir_compiler_7_2_1_s_axis_data_tready_net = ready_out;
   assign data_in_net = data_in;
+  assign last_in_net = last_in;
   assign reset_in_net = reset_in;
+  assign set_addr_in_net = set_addr_in;
+  assign set_stb_in_net = set_stb_in;
   assign valid_in_net = valid_in;
 endmodule
 `timescale 1 ns / 10 ps
-// Generated from Simulink block implementation_interface_out
+// Generated from Simulink block channelizer/implementation_interface_out
 module channelizer_implementation_interface_out (
   input valid_in,
   input [32-1:0] data_in,
-  input [1-1:0] last_in,
+  input last_in,
   input [1-1:0] reset_in,
+  input [1-1:0] set_strb_in,
+  input [8-1:0] set_addr_in,
   input [1-1:0] ready_out
 );
   wire ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
   wire [32-1:0] concat_y_net;
-  wire [1-1:0] relational_op_net;
-  wire [1-1:0] reset_in_net;
+  wire axi_fifo_m_axis_tlast_net;
+  wire [1-1:0] logical_y_net;
+  wire [1-1:0] set_stb_in_net;
+  wire [8-1:0] set_addr_in_net;
   wire [1-1:0] ready_out_net;
   assign ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net = valid_in;
   assign concat_y_net = data_in;
-  assign relational_op_net = last_in;
-  assign reset_in_net = reset_in;
+  assign axi_fifo_m_axis_tlast_net = last_in;
+  assign logical_y_net = reset_in;
+  assign set_stb_in_net = set_strb_in;
+  assign set_addr_in_net = set_addr_in;
   assign ready_out_net = ready_out;
 endmodule
 `timescale 1 ns / 10 ps
@@ -996,6 +1119,12 @@ module channelizer_struct (
   output [1-1:0] last_out,
   output [1-1:0] valid_out
 );
+  wire [1-1:0] axi_fifo_m_axis_tlast_net;
+  wire [1-1:0] ready_out_net;
+  wire [1-1:0] ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
+  wire clk_net;
+  wire ce_net;
+  wire [1-1:0] logical_y_net;
   wire [32-1:0] data_in_net;
   wire [1-1:0] last_in_net;
   wire [1-1:0] fir_compiler_7_2_1_s_axis_data_tready_net;
@@ -1005,11 +1134,6 @@ module channelizer_struct (
   wire [1-1:0] set_stb_in_net;
   wire [1-1:0] valid_in_net;
   wire [32-1:0] concat_y_net;
-  wire [1-1:0] relational_op_net;
-  wire [1-1:0] ready_out_net;
-  wire [1-1:0] ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
-  wire clk_net;
-  wire ce_net;
   assign data_in_net = data_in;
   assign last_in_net = last_in;
   assign ready_in = fir_compiler_7_2_1_s_axis_data_tready_net;
@@ -1019,7 +1143,7 @@ module channelizer_struct (
   assign set_stb_in_net = set_stb_in;
   assign valid_in_net = valid_in;
   assign data_out = concat_y_net;
-  assign last_out = relational_op_net;
+  assign last_out = axi_fifo_m_axis_tlast_net;
   assign ready_out_net = ready_out;
   assign valid_out = ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net;
   assign clk_net = clk_1;
@@ -1028,25 +1152,34 @@ module channelizer_struct (
     .ready_out(ready_out_net),
     .valid_in(valid_in_net),
     .data_in(data_in_net),
+    .last_in(last_in_net),
     .reset_in(reset_in_net),
+    .set_stb_in(set_stb_in_net),
+    .set_addr_in(set_addr_in_net),
     .clk_1(clk_net),
     .ce_1(ce_net),
     .ready_in(fir_compiler_7_2_1_s_axis_data_tready_net),
     .valid_out(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
     .data_out(concat_y_net),
-    .last_out(relational_op_net)
+    .last_out(axi_fifo_m_axis_tlast_net),
+    .reset_out(logical_y_net)
   );
   channelizer_implementation_interface_in implementation_interface_in (
     .ready_out(fir_compiler_7_2_1_s_axis_data_tready_net),
     .data_in(data_in_net),
+    .last_in(last_in_net),
     .reset_in(reset_in_net),
+    .set_addr_in(set_addr_in_net),
+    .set_stb_in(set_stb_in_net),
     .valid_in(valid_in_net)
   );
   channelizer_implementation_interface_out implementation_interface_out (
     .valid_in(ifft_fast_fourier_transform_8_1_m_axis_data_tvalid_net),
     .data_in(concat_y_net),
-    .last_in(relational_op_net),
-    .reset_in(reset_in_net),
+    .last_in(axi_fifo_m_axis_tlast_net),
+    .reset_in(logical_y_net),
+    .set_strb_in(set_stb_in_net),
+    .set_addr_in(set_addr_in_net),
     .ready_out(ready_out_net)
   );
 endmodule
@@ -1073,7 +1206,7 @@ module channelizer_default_clock_driver (
 endmodule
 `timescale 1 ns / 10 ps
 // Generated from Simulink block 
-(* core_generation_info = "channelizer,sysgen_core_2015_2,{,compilation=Synthesized Checkpoint,block_icon_display=Default,family=kintex7,part=xc7k410t,speed=-2,package=ffg900,synthesis_language=verilog,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=1,ce_clr=0,clock_period=5,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=50000,concat=2,constant=8,convert=4,counter=5,delay=3,dpram=1,fir_compiler_v7_2=1,inv=3,logical=9,reinterpret=18,relational=3,slice=16,xfft_v9_0=1,}" *)
+(* core_generation_info = "channelizer,sysgen_core_2015_2,{,compilation=Synthesized Checkpoint,block_icon_display=Default,family=kintex7,part=xc7k410t,speed=-2,package=ffg900,synthesis_language=verilog,hdl_library=xil_defaultlib,synthesis_strategy=Vivado Synthesis Defaults,implementation_strategy=Vivado Implementation Defaults,testbench=0,interface_doc=1,ce_clr=0,clock_period=5,system_simulink_period=1,waveform_viewer=0,axilite_interface=0,ip_catalog_plugin=0,hwcosim_burst_mode=0,simulation_time=100000,axi_fifo=1,concat=2,constant=11,convert=4,counter=5,delay=4,dpram=1,fir_compiler_v7_2=1,inv=4,logical=12,reinterpret=18,relational=4,slice=16,xfft_v9_0=1,}" *)
 module channelizer (
   input [32-1:0] data_in,
   input [1-1:0] last_in,

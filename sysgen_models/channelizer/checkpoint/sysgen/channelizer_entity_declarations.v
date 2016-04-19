@@ -36,6 +36,62 @@
 
 `include "conv_pkg.v"
 `timescale 1 ns / 10 ps
+module sysgen_constant_828adcadae (
+  output [(8 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  assign op = 8'b00000001;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_inverter_dea83a2b38 (
+  input [(1 - 1):0] ip,
+  output [(1 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  wire ip_1_26;
+  reg op_mem_22_20[0:(1 - 1)];
+  initial
+    begin
+      op_mem_22_20[0] = 1'b0;
+    end
+  wire op_mem_22_20_front_din;
+  wire op_mem_22_20_back;
+  wire op_mem_22_20_push_front_pop_back_en;
+  localparam [(1 - 1):0] const_value = 1'b1;
+  wire internal_ip_12_1_bitnot;
+  assign ip_1_26 = ip;
+  assign op_mem_22_20_back = op_mem_22_20[0];
+  always @(posedge clk)
+    begin:proc_op_mem_22_20
+      integer i;
+      if (((ce == 1'b1) && (op_mem_22_20_push_front_pop_back_en == 1'b1)))
+        begin
+          op_mem_22_20[0] <= op_mem_22_20_front_din;
+        end
+    end
+  assign internal_ip_12_1_bitnot = ~ip_1_26;
+  assign op_mem_22_20_push_front_pop_back_en = 1'b0;
+  assign op = internal_ip_12_1_bitnot;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_logical_8b7810a2aa (
+  input [(1 - 1):0] d0,
+  input [(1 - 1):0] d1,
+  output [(1 - 1):0] y,
+  input clk,
+  input ce,
+  input clr);
+  wire d0_1_24;
+  wire d1_1_27;
+  wire fully_2_1_bit;
+  assign d0_1_24 = d0;
+  assign d1_1_27 = d1;
+  assign fully_2_1_bit = d0_1_24 | d1_1_27;
+  assign y = fully_2_1_bit;
+endmodule
+`timescale 1 ns / 10 ps
 module sysgen_logical_f9d74a72d1 (
   input [(1 - 1):0] d0,
   input [(1 - 1):0] d1,
@@ -88,38 +144,6 @@ module sysgen_constant_fa8d4b3e6d (
   input ce,
   input clr);
   assign op = 1'b1;
-endmodule
-`timescale 1 ns / 10 ps
-module sysgen_inverter_dea83a2b38 (
-  input [(1 - 1):0] ip,
-  output [(1 - 1):0] op,
-  input clk,
-  input ce,
-  input clr);
-  wire ip_1_26;
-  reg op_mem_22_20[0:(1 - 1)];
-  initial
-    begin
-      op_mem_22_20[0] = 1'b0;
-    end
-  wire op_mem_22_20_front_din;
-  wire op_mem_22_20_back;
-  wire op_mem_22_20_push_front_pop_back_en;
-  localparam [(1 - 1):0] const_value = 1'b1;
-  wire internal_ip_12_1_bitnot;
-  assign ip_1_26 = ip;
-  assign op_mem_22_20_back = op_mem_22_20[0];
-  always @(posedge clk)
-    begin:proc_op_mem_22_20
-      integer i;
-      if (((ce == 1'b1) && (op_mem_22_20_push_front_pop_back_en == 1'b1)))
-        begin
-          op_mem_22_20[0] <= op_mem_22_20_front_din;
-        end
-    end
-  assign internal_ip_12_1_bitnot = ~ip_1_26;
-  assign op_mem_22_20_push_front_pop_back_en = 1'b0;
-  assign op = internal_ip_12_1_bitnot;
 endmodule
 `timescale 1 ns / 10 ps
 module sysgen_concat_c4ee67c59a (
@@ -1034,31 +1058,6 @@ module sysgen_delay_52cccd8896 (
   assign q = op_mem_0_8_24;
 endmodule
 `timescale 1 ns / 10 ps
-module sysgen_constant_9ceded7773 (
-  output [(10 - 1):0] op,
-  input clk,
-  input ce,
-  input clr);
-  assign op = 10'b1111111111;
-endmodule
-`timescale 1 ns / 10 ps
-module sysgen_relational_765ebec234 (
-  input [(10 - 1):0] a,
-  input [(10 - 1):0] b,
-  output [(1 - 1):0] op,
-  input clk,
-  input ce,
-  input clr);
-  wire [(10 - 1):0] a_1_31;
-  wire [(10 - 1):0] b_1_34;
-  localparam [(1 - 1):0] const_value = 1'b1;
-  wire result_12_3_rel;
-  assign a_1_31 = a;
-  assign b_1_34 = b;
-  assign result_12_3_rel = a_1_31 == b_1_34;
-  assign op = result_12_3_rel;
-endmodule
-`timescale 1 ns / 10 ps
 module sysgen_reinterpret_4bd3487388 (
   input [(34 - 1):0] input_port,
   output [(34 - 1):0] output_port,
@@ -1096,6 +1095,211 @@ module sysgen_relational_f303c211e7 (
   assign result_12_3_rel = a_1_31 == b_1_34;
   assign op = result_12_3_rel;
 endmodule
+`timescale 1 ns / 10 ps
+module sysgen_relational_fc1426e2d9 (
+  input [(8 - 1):0] a,
+  input [(8 - 1):0] b,
+  output [(1 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  wire [(8 - 1):0] a_1_31;
+  wire [(8 - 1):0] b_1_34;
+  localparam [(1 - 1):0] const_value = 1'b1;
+  wire result_12_3_rel;
+  assign a_1_31 = a;
+  assign b_1_34 = b;
+  assign result_12_3_rel = a_1_31 == b_1_34;
+  assign op = result_12_3_rel;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_relational_9133ff9c4b (
+  input [(2 - 1):0] a,
+  input [(2 - 1):0] b,
+  output [(1 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  wire [(2 - 1):0] a_1_31;
+  wire [(2 - 1):0] b_1_34;
+  localparam [(1 - 1):0] const_value = 1'b1;
+  wire result_12_3_rel;
+  assign a_1_31 = a;
+  assign b_1_34 = b;
+  assign result_12_3_rel = a_1_31 == b_1_34;
+  assign op = result_12_3_rel;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_constant_07b701207a (
+  output [(8 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  assign op = 8'b11001000;
+endmodule
+`timescale 1 ns / 10 ps
+module sysgen_constant_118900d9b9 (
+  output [(2 - 1):0] op,
+  input clk,
+  input ce,
+  input clr);
+  assign op = 2'b11;
+endmodule
+//-----------------------------------------------------------------
+ // System Generator version 13.2 VERILOG source file.
+ //
+ // Copyright(C) 2011 by Xilinx, Inc.  All rights reserved.  This
+ // text/file contains proprietary, confidential information of Xilinx,
+ // Inc., is distributed under license from Xilinx, Inc., and may be used,
+ // copied and/or disclosed only pursuant to the terms of a valid license
+ // agreement with Xilinx, Inc.  Xilinx hereby grants you a license to use
+ // this text/file solely for design, simulation, implementation and
+ // creation of design files limited to Xilinx devices or technologies.
+ // Use with non-Xilinx devices or technologies is expressly prohibited
+ // and immediately terminates your license unless covered by a separate
+ // agreement.
+ //
+ // Xilinx is providing this design, code, or information "as is" solely
+ // for use in developing programs and solutions for Xilinx devices.  By
+ // providing this design, code, or information as one possible
+ // implementation of this feature, application or standard, Xilinx is
+ // making no representation that this implementation is free from any
+ // claims of infringement.  You are responsible for obtaining any rights
+ // you may require for your implementation.  Xilinx expressly disclaims
+ // any warranty whatsoever with respect to the adequacy of the
+ // implementation, including but not limited to warranties of
+ // merchantability or fitness for a particular purpose.
+ //
+ // Xilinx products are not intended for use in life support appliances,
+ // devices, or systems.  Use in such applications is expressly prohibited.
+ //
+ // Any modifications that are made to the source code are done at the user's
+ // sole risk and will be unsupported.
+ //
+ // This copyright and support notice must be retained as part of this
+ // text at all times.  (c) Copyright 1995-2011 Xilinx, Inc.  All rights
+ // reserved.
+ //-----------------------------------------------------------------
+module channelizer_xlaxififogen(
+ s_aclk,
+ ce,
+ aresetn,
+ axis_underflow,
+ axis_overflow,
+ axis_data_count,
+ axis_prog_full_thresh,
+ axis_prog_empty_thresh,
+ s_axis_tdata,
+ s_axis_tstrb,
+ s_axis_tkeep,
+ s_axis_tlast,
+ s_axis_tid,
+ s_axis_tdest,
+ s_axis_tuser,
+ s_axis_tvalid,
+ s_axis_tready,
+ m_axis_tdata,
+ m_axis_tstrb,
+ m_axis_tkeep,
+ m_axis_tlast,
+ m_axis_tid,
+ m_axis_tdest,
+ m_axis_tuser,
+ m_axis_tvalid,
+ m_axis_tready
+ );
+ parameter core_name0 = "";
+ parameter has_aresetn = -1;
+ parameter tdata_width = -1;
+ parameter tdest_width = -1;
+ parameter tstrb_width = -1;
+ parameter tkeep_width = -1;
+ parameter tid_width = -1;
+ parameter tuser_width = -1;
+ parameter depth_bits = -1; 
+ input ce;
+
+
+ input s_aclk;
+input aresetn;
+output axis_underflow;
+output axis_overflow;
+output [depth_bits-1:0] axis_data_count;
+input  [depth_bits-2:0] axis_prog_full_thresh;
+input  [depth_bits-2:0] axis_prog_empty_thresh;
+input  [tdata_width-1:0] s_axis_tdata;
+input  [tstrb_width-1:0] s_axis_tstrb;
+input  [tkeep_width-1:0] s_axis_tkeep;
+input                     s_axis_tlast;
+input  [tid_width-1:0] s_axis_tid;
+input  [tdest_width-1:0] s_axis_tdest;
+input  [tuser_width-1:0] s_axis_tuser;
+input                     s_axis_tvalid;
+output                    s_axis_tready;
+output  [tdata_width-1:0] m_axis_tdata;
+output  [tstrb_width-1:0] m_axis_tstrb;
+output  [tkeep_width-1:0] m_axis_tkeep;
+output                        m_axis_tlast;
+output  [tid_width-1:0] m_axis_tid;
+output  [tdest_width-1:0] m_axis_tdest;
+output  [tuser_width-1:0] m_axis_tuser;
+output                        m_axis_tvalid;
+input                 m_axis_tready;
+
+
+   wire srst;
+   reg reset_gen1 = 1'b0;
+   reg reset_gen_d1 = 1'b0;
+   reg reset_gen_d2 = 1'b0;
+ 
+   always @(posedge s_aclk)
+   begin
+   	reset_gen1 <= 1'b1;
+ 	reset_gen_d1 <= reset_gen1;
+ 	reset_gen_d2 <= reset_gen_d1;
+   end
+ 
+   generate
+   if(has_aresetn == 0)
+   begin:if_block
+         assign srst = reset_gen_d2;
+   end
+   else
+   begin:else_block
+     assign srst = ~((~aresetn) & ce);
+   end
+   endgenerate
+ 
+   generate
+
+
+
+if (core_name0 == "channelizer_fifo_generator_v12_0_0") 
+     begin:comp0
+channelizer_fifo_generator_v12_0_0 core_instance0 ( 
+        .s_aclk(s_aclk),
+        .s_aresetn(srst),
+        .s_axis_tdata(s_axis_tdata),
+        .s_axis_tlast(s_axis_tlast),
+        .s_axis_tid  (s_axis_tid),
+        .s_axis_tdest(s_axis_tdest),
+        .s_axis_tuser(s_axis_tuser),
+        .s_axis_tvalid(s_axis_tvalid),
+        .s_axis_tready(s_axis_tready),
+        .m_axis_tdata(m_axis_tdata),
+        .m_axis_tlast(m_axis_tlast),
+        .m_axis_tid  (m_axis_tid),
+        .m_axis_tdest(m_axis_tdest),
+        .m_axis_tuser(m_axis_tuser),
+        .m_axis_tvalid(m_axis_tvalid),
+        .m_axis_tready(m_axis_tready)
+ 
+       ); 
+     end 
+
+endgenerate
+ endmodule
+
 module channelizer_xlcounter_free  (ce, clr, clk, op, up, load, din, en, rst);
  
  parameter core_name0= "";

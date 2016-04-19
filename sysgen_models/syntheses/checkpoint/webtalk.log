@@ -2,10 +2,10 @@
 # Webtalk v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Mon Apr 18 10:15:18 2016
-# Process ID: 19155
+# Start of session at: Tue Apr 19 11:56:14 2016
+# Process ID: 6677
 # Log file: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/webtalk.log
 # Journal file: /home/randy/rfnoc_dec2015/sysgen_models/syntheses/checkpoint/webtalk.jou
 #-----------------------------------------------------------
 invalid command name "rdi::open_ppr_or_dcp"
-INFO: [Common 17-206] Exiting Webtalk at Mon Apr 18 10:15:18 2016...
+INFO: [Common 17-206] Exiting Webtalk at Tue Apr 19 11:56:14 2016...

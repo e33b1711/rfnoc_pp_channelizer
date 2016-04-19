@@ -6,6 +6,23 @@
   <ids>
     <id revision="0">11F4</id>
   </ids>
+  <!-- Registers -->
+  <registers>
+    <setreg>
+      <name>RESET</name>
+      <address>200</address>
+    </setreg>
+  </registers>
+
+  <!-- Args -->
+  <args>
+    <arg>
+      <name>reset</name>
+      <type>int</type>
+      <value>32</value>
+      <action>SR_WRITE("SR_PKT_SIZE", $pkt_size)</action>
+    </arg>
+  </args>
 <ports>
     <sink>
       <name>in</name>

@@ -614,7 +614,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(720, 331)</value>
+      <value>(848, 579)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -937,7 +937,7 @@
     </param>
   </block>
   <block>
-    <key>uhd_rfnoc_streamer_packet_resizer</key>
+    <key>uhd_rfnoc_streamer_fifo</key>
     <param>
       <key>alias</key>
       <value></value>
@@ -951,24 +951,40 @@
       <value></value>
     </param>
     <param>
+      <key>otw</key>
+      <value>sc16</value>
+    </param>
+    <param>
       <key>device_index</key>
       <value>-1</value>
     </param>
     <param>
       <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>block_index</key>
+      <value>-1</value>
+    </param>
+    <param>
+      <key>grvlen</key>
       <value>1</value>
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(936, 451)</value>
+      <value>(608, 443)</value>
     </param>
     <param>
       <key>_rotation</key>
       <value>0</value>
     </param>
     <param>
+      <key>type</key>
+      <value>fc32</value>
+    </param>
+    <param>
       <key>id</key>
-      <value>uhd_rfnoc_streamer_packet_resizer_0</value>
+      <value>uhd_rfnoc_streamer_fifo_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -977,14 +993,6 @@
     <param>
       <key>minoutbuf</key>
       <value>0</value>
-    </param>
-    <param>
-      <key>block_index</key>
-      <value>-1</value>
-    </param>
-    <param>
-      <key>pkt_size</key>
-      <value>1024</value>
     </param>
   </block>
   <block>
@@ -1011,7 +1019,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(672, 449)</value>
+      <value>(688, 329)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1138,7 +1146,7 @@
   </connection>
   <connection>
     <source_block_id>blocks_add_xx_0</source_block_id>
-    <sink_block_id>blocks_throttle_0</sink_block_id>
+    <sink_block_id>uhd_rfnoc_streamer_syntheses_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -1150,19 +1158,19 @@
   </connection>
   <connection>
     <source_block_id>blocks_throttle_0</source_block_id>
-    <sink_block_id>uhd_rfnoc_streamer_syntheses_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>uhd_rfnoc_streamer_packet_resizer_0</source_block_id>
     <sink_block_id>qtgui_freq_sink_x_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
+    <source_block_id>uhd_rfnoc_streamer_fifo_0</source_block_id>
+    <sink_block_id>blocks_throttle_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>uhd_rfnoc_streamer_syntheses_0</source_block_id>
-    <sink_block_id>uhd_rfnoc_streamer_packet_resizer_0</sink_block_id>
+    <sink_block_id>uhd_rfnoc_streamer_fifo_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>

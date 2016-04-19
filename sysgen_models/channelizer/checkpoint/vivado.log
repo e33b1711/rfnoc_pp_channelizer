@@ -2,8 +2,8 @@
 # Vivado v2015.2 (64-bit)
 # SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
 # IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
-# Start of session at: Mon Apr 18 10:39:13 2016
-# Process ID: 19610
+# Start of session at: Tue Apr 19 11:27:27 2016
+# Process ID: 4185
 # Log file: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/vivado.log
 # Journal file: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/vivado.jou
 #-----------------------------------------------------------
@@ -12,6 +12,11 @@ WARNING: [Coretcl 2-176] No IPs found
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.2/data/ip'.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_fifo_generator_v12_0_0' to 'channelizer_fifo_generator_v12_0_0' is not allowed and is ignored.
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'TKEEP_WIDTH' from '1' to '8' has been ignored for IP 'channelizer_fifo_generator_v12_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'TSTRB_WIDTH' from '1' to '8' has been ignored for IP 'channelizer_fifo_generator_v12_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Empty_Threshold_Assert_Value_axis' from '4094' to '1022' has been ignored for IP 'channelizer_fifo_generator_v12_0_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Full_Threshold_Assert_Value_axis' from '4095' to '0' has been ignored for IP 'channelizer_fifo_generator_v12_0_0'
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_xfft_v9_0_0' to 'channelizer_xfft_v9_0_0' is not allowed and is ignored.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_c_counter_binary_v12_0_0' to 'channelizer_c_counter_binary_v12_0_0' is not allowed and is ignored.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_c_counter_binary_v12_0_1' to 'channelizer_c_counter_binary_v12_0_1' is not allowed and is ignored.
@@ -19,9 +24,11 @@ WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_blk_mem_gen_v8_2_0' to 'channelizer_blk_mem_gen_v8_2_0' is not allowed and is ignored.
 WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Reset_Memory_Latch_B' from 'false' to '0' has been ignored for IP 'channelizer_blk_mem_gen_v8_2_0'
 WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'Reset_Memory_Latch_A' from 'false' to '0' has been ignored for IP 'channelizer_blk_mem_gen_v8_2_0'
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_c_counter_binary_v12_0_2' to 'channelizer_c_counter_binary_v12_0_2' is not allowed and is ignored.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_fir_compiler_v7_2_0' to 'channelizer_fir_compiler_v7_2_0' is not allowed and is ignored.
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_c_counter_binary_v12_0_2' to 'channelizer_c_counter_binary_v12_0_2' is not allowed and is ignored.
 WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'channelizer_c_counter_binary_v12_0_3' to 'channelizer_c_counter_binary_v12_0_3' is not allowed and is ignored.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_fifo_generator_v12_0_0'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_fifo_generator_v12_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_xfft_v9_0_0'...
 WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_xfft_v9_0_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_c_counter_binary_v12_0_0'...
@@ -30,24 +37,25 @@ INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_c_coun
 WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_c_counter_binary_v12_0_1' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_blk_mem_gen_v8_2_0'...
 WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_blk_mem_gen_v8_2_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_c_counter_binary_v12_0_2'...
-WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_c_counter_binary_v12_0_2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_fir_compiler_v7_2_0'...
 WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_fir_compiler_v7_2_0' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_c_counter_binary_v12_0_2'...
+WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_c_counter_binary_v12_0_2' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'channelizer_c_counter_binary_v12_0_3'...
 WARNING: [IP_Flow 19-1687] The current project language is set to Verilog. However IP 'channelizer_c_counter_binary_v12_0_3' does not support 'Verilog Synthesis' output products, delivering 'VHDL Synthesis' output products instead.
-[Mon Apr 18 10:39:27 2016] Launched channelizer_xfft_v9_0_0_synth_1, channelizer_c_counter_binary_v12_0_0_synth_1, channelizer_c_counter_binary_v12_0_1_synth_1, channelizer_blk_mem_gen_v8_2_0_synth_1, channelizer_c_counter_binary_v12_0_2_synth_1, channelizer_fir_compiler_v7_2_0_synth_1, channelizer_c_counter_binary_v12_0_3_synth_1...
+[Tue Apr 19 11:27:42 2016] Launched channelizer_fifo_generator_v12_0_0_synth_1, channelizer_xfft_v9_0_0_synth_1, channelizer_c_counter_binary_v12_0_0_synth_1, channelizer_c_counter_binary_v12_0_1_synth_1, channelizer_blk_mem_gen_v8_2_0_synth_1, channelizer_fir_compiler_v7_2_0_synth_1, channelizer_c_counter_binary_v12_0_2_synth_1, channelizer_c_counter_binary_v12_0_3_synth_1...
 Run output will be captured here:
+channelizer_fifo_generator_v12_0_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fifo_generator_v12_0_0_synth_1/runme.log
 channelizer_xfft_v9_0_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_xfft_v9_0_0_synth_1/runme.log
 channelizer_c_counter_binary_v12_0_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_0_synth_1/runme.log
 channelizer_c_counter_binary_v12_0_1_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_1_synth_1/runme.log
 channelizer_blk_mem_gen_v8_2_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_blk_mem_gen_v8_2_0_synth_1/runme.log
-channelizer_c_counter_binary_v12_0_2_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/runme.log
 channelizer_fir_compiler_v7_2_0_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fir_compiler_v7_2_0_synth_1/runme.log
+channelizer_c_counter_binary_v12_0_2_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/runme.log
 channelizer_c_counter_binary_v12_0_3_synth_1: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/runme.log
-[Mon Apr 18 10:39:27 2016] Launched synth_1...
+[Tue Apr 19 11:27:42 2016] Launched synth_1...
 Run output will be captured here: /home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/runme.log
-[Mon Apr 18 10:39:27 2016] Waiting for synth_1 to finish...
+[Tue Apr 19 11:27:42 2016] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log channelizer.vds -m64 -mode batch -messageDb vivado.pb -notrace -source channelizer.tcl
@@ -63,12 +71,12 @@ Command: synth_design -top channelizer -part xc7k410tffg900-2 -mode out_of_conte
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k410t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k410t'
-INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -109 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -110 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 948.633 ; gain = 138.520 ; free physical = 819 ; free virtual = 10017
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 948.637 ; gain = 138.520 ; free physical = 990 ; free virtual = 11757
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'channelizer' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1077]
-INFO: [Synth 8-638] synthesizing module 'channelizer_default_clock_driver' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1055]
+INFO: [Synth 8-638] synthesizing module 'channelizer' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1210]
+INFO: [Synth 8-638] synthesizing module 'channelizer_default_clock_driver' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1188]
 INFO: [Synth 8-638] synthesizing module 'xlclockdriver' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
 	Parameter log_2_period bound to: 32'sb00000000000000000000000000000001 
 	Parameter period bound to: 32'sb00000000000000000000000000000001 
@@ -106,31 +114,31 @@ INFO: [Synth 8-256] done synthesizing module 'FDRE' (1#1) [/opt/Xilinx/Vivado/20
 INFO: [Synth 8-256] done synthesizing module 'single_reg_w_init' (2#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:45]
 INFO: [Synth 8-256] done synthesizing module 'synth_reg_w_init' (3#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/synth_reg_w_init.v:3]
 INFO: [Synth 8-256] done synthesizing module 'xlclockdriver' (4#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/xlclockdriver_rd.v:22]
-WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1066]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_default_clock_driver' (5#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1055]
-INFO: [Synth 8-638] synthesizing module 'channelizer_struct' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:983]
-INFO: [Synth 8-638] synthesizing module 'channelizer_channelizer' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:859]
+WARNING: [Synth 8-350] instance 'clockdriver' of module 'xlclockdriver' requires 7 connections, but only 5 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1199]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_default_clock_driver' (5#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1188]
+INFO: [Synth 8-638] synthesizing module 'channelizer_struct' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1106]
+INFO: [Synth 8-638] synthesizing module 'channelizer_channelizer' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:889]
 INFO: [Synth 8-638] synthesizing module 'channelizer_fft1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:143]
 INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem_x0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:7]
-INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_ad93f43143' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:55]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_ad93f43143' (6#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:55]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_ad93f43143' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:111]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_ad93f43143' (6#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:111]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 	Parameter new_msb bound to: 15 - type: integer 
 	Parameter new_lsb bound to: 0 - type: integer 
 	Parameter x_width bound to: 32 - type: integer 
 	Parameter y_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice' (7#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice' (7#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 	Parameter new_msb bound to: 31 - type: integer 
 	Parameter new_lsb bound to: 16 - type: integer 
 	Parameter x_width bound to: 32 - type: integer 
 	Parameter y_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized0' (7#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized0' (7#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem_x0' (8#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:7]
 INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem1_x0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:57]
-INFO: [Synth 8-638] synthesizing module 'sysgen_concat_c4ee67c59a' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_c4ee67c59a' (9#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
+INFO: [Synth 8-638] synthesizing module 'sysgen_concat_c4ee67c59a' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:149]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_concat_c4ee67c59a' (9#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:149]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
 	Parameter din_width bound to: 21 - type: integer 
 	Parameter din_bin_pt bound to: 15 - type: integer 
 	Parameter din_arith bound to: 2 - type: integer 
@@ -198,81 +206,65 @@ INFO: [Synth 8-638] synthesizing module 'saturation_arith' [/home/randy/rfnoc_de
 	Parameter abs_new_width bound to: 16 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'saturation_arith' (14#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:582]
 INFO: [Synth 8-256] done synthesizing module 'convert_type' (15#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:775]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert' (16#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
-INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_af1a0b71e1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:210]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_af1a0b71e1' (17#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:210]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert' (16#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_af1a0b71e1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:234]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_af1a0b71e1' (17#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:234]
 INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem1_x0' (18#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:57]
-INFO: [Synth 8-638] synthesizing module 'sysgen_constant_fa8d4b3e6d' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:85]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_fa8d4b3e6d' (19#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:85]
-INFO: [Synth 8-638] synthesizing module 'xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1268]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xfft_v9_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_xfft_v9_0_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xfft_v9_0_0' (20#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_xfft_v9_0_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc' (21#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1268]
-INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_dea83a2b38' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:93]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_fa8d4b3e6d' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:141]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_fa8d4b3e6d' (19#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:141]
+INFO: [Synth 8-638] synthesizing module 'xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1472]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xfft_v9_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_xfft_v9_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xfft_v9_0_0' (20#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_xfft_v9_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc' (21#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1472]
+INFO: [Synth 8-638] synthesizing module 'sysgen_inverter_dea83a2b38' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:47]
 	Parameter const_value bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_dea83a2b38' (22#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:93]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_inverter_dea83a2b38' (22#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:47]
 INFO: [Synth 8-256] done synthesizing module 'channelizer_fft1' (23#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:143]
 INFO: [Synth 8-638] synthesizing module 'channelizer_frame_reverse' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:241]
-INFO: [Synth 8-638] synthesizing module 'sysgen_constant_ff57ff80b6' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:223]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_ff57ff80b6' (24#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:223]
-INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9b3be16c34' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:231]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9b3be16c34' (25#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:231]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_ff57ff80b6' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:247]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_ff57ff80b6' (24#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:247]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9b3be16c34' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:255]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9b3be16c34' (25#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:255]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
 	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_0 - type: string 
 	Parameter op_width bound to: 5 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
 	Parameter oneStr bound to: 40'b0011000100110001001100010011000100110001 
-INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_0' (26#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free' (27#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_0' (26#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free' (27#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
 WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:304]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
 	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_1 - type: string 
 	Parameter op_width bound to: 5 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
 	Parameter oneStr bound to: 40'b0011000100110001001100010011000100110001 
-INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_1_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_1' (28#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_1_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized0' (28#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_1' (28#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_1_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized0' (28#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
 WARNING: [Synth 8-350] instance 'counter2' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:317]
-INFO: [Synth 8-638] synthesizing module 'sysgen_delay_2640a39ee9' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:239]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_2640a39ee9' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:263]
 	Parameter const_value bound to: 5'b10001 
-INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_2640a39ee9' (29#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:239]
-INFO: [Synth 8-638] synthesizing module 'sysgen_delay_52cccd8896' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:974]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_2640a39ee9' (29#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:263]
+INFO: [Synth 8-638] synthesizing module 'sysgen_delay_52cccd8896' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:998]
 	Parameter const_value bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_52cccd8896' (30#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:974]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xldpram' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1167]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_delay_52cccd8896' (30#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:998]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xldpram' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1371]
 	Parameter core_name0 bound to: channelizer_blk_mem_gen_v8_2_0 - type: string 
 	Parameter c_width_a bound to: 32 - type: integer 
 	Parameter c_address_width_a bound to: 5 - type: integer 
 	Parameter c_width_b bound to: 32 - type: integer 
 	Parameter c_address_width_b bound to: 5 - type: integer 
 	Parameter latency bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'channelizer_blk_mem_gen_v8_2_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_blk_mem_gen_v8_2_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_blk_mem_gen_v8_2_0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_blk_mem_gen_v8_2_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xldpram' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1167]
-INFO: [Synth 8-638] synthesizing module 'sysgen_logical_f9d74a72d1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:39]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_f9d74a72d1' (33#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:39]
+INFO: [Synth 8-638] synthesizing module 'channelizer_blk_mem_gen_v8_2_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_blk_mem_gen_v8_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_blk_mem_gen_v8_2_0' (31#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_blk_mem_gen_v8_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xldpram' (32#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1371]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_f9d74a72d1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:95]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_f9d74a72d1' (33#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:95]
 INFO: [Synth 8-256] done synthesizing module 'channelizer_frame_reverse' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:241]
-INFO: [Synth 8-638] synthesizing module 'channelizer_last_handler' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:388]
-INFO: [Synth 8-638] synthesizing module 'sysgen_constant_9ceded7773' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1037]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_9ceded7773' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1037]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_2 - type: string 
-	Parameter op_width bound to: 10 - type: integer 
-	Parameter op_arith bound to: 1 - type: integer 
-	Parameter oneStr bound to: 80'b00110001001100010011000100110001001100010011000100110001001100010011000100110001 
-INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_2_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_2' (36#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_2_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized1' (36#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-INFO: [Synth 8-638] synthesizing module 'sysgen_relational_765ebec234' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1045]
-	Parameter const_value bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_765ebec234' (37#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1045]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_last_handler' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:388]
-INFO: [Synth 8-638] synthesizing module 'channelizer_poly_phase_filter' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:749]
-INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:452]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
+INFO: [Synth 8-638] synthesizing module 'channelizer_poly_phase_filter' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:685]
+INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:388]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
 	Parameter din_width bound to: 16 - type: integer 
 	Parameter din_bin_pt bound to: 0 - type: integer 
 	Parameter din_arith bound to: 2 - type: integer 
@@ -308,7 +300,7 @@ INFO: [Synth 8-638] synthesizing module 'cast__parameterized0' [/home/randy/rfno
 	Parameter new_bin_pt bound to: 0 - type: integer 
 	Parameter new_arith bound to: 2 - type: integer 
 	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'cast__parameterized0' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized0' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
 INFO: [Synth 8-638] synthesizing module 'trunc__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
 	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
 	Parameter old_bin_pt bound to: 0 - type: integer 
@@ -325,9 +317,9 @@ INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized0' [/home/rand
 INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
 	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
 	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
-INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized0' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
-INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized0' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:235]
-INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized0' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized0' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized0' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized0' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
 INFO: [Synth 8-638] synthesizing module 'wrap_arith' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:754]
 	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
 	Parameter old_bin_pt bound to: 0 - type: integer 
@@ -343,11 +335,11 @@ INFO: [Synth 8-638] synthesizing module 'cast__parameterized1' [/home/randy/rfno
 	Parameter new_bin_pt bound to: 0 - type: integer 
 	Parameter new_arith bound to: 2 - type: integer 
 	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'cast__parameterized1' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
-INFO: [Synth 8-256] done synthesizing module 'wrap_arith' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:754]
-INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized0' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:775]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert__parameterized0' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized1' (34#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'wrap_arith' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:754]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized0' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert__parameterized0' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlconvert__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
 	Parameter din_width bound to: 16 - type: integer 
 	Parameter din_bin_pt bound to: 0 - type: integer 
 	Parameter din_arith bound to: 2 - type: integer 
@@ -383,7 +375,7 @@ INFO: [Synth 8-638] synthesizing module 'cast__parameterized2' [/home/randy/rfno
 	Parameter new_bin_pt bound to: 0 - type: integer 
 	Parameter new_arith bound to: 2 - type: integer 
 	Parameter right_of_dp bound to: 32'sb00000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'cast__parameterized2' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
+INFO: [Synth 8-256] done synthesizing module 'cast__parameterized2' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:13]
 INFO: [Synth 8-638] synthesizing module 'trunc__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
 	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
 	Parameter old_bin_pt bound to: 0 - type: integer 
@@ -400,75 +392,119 @@ INFO: [Synth 8-638] synthesizing module 'extend_msb__parameterized1' [/home/rand
 INFO: [Synth 8-638] synthesizing module 'sign_ext__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
 	Parameter old_width bound to: 32'sb00000000000000000000000000010010 
 	Parameter new_width bound to: 32'sb00000000000000000000000000010010 
-INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
-INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:235]
-INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
-INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:775]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:143]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'sign_ext__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:211]
+INFO: [Synth 8-256] done synthesizing module 'extend_msb__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:235]
+INFO: [Synth 8-256] done synthesizing module 'trunc__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:539]
+INFO: [Synth 8-256] done synthesizing module 'convert_type__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/convert_type.v:775]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlconvert__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:167]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 	Parameter new_msb bound to: 31 - type: integer 
 	Parameter new_lsb bound to: 16 - type: integer 
 	Parameter x_width bound to: 32 - type: integer 
 	Parameter y_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized1' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem' (40#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:452]
-INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:550]
-INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_4bd3487388' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1062]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_4bd3487388' (41#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1062]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized1' (35#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem' (36#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:388]
+INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:486]
+INFO: [Synth 8-638] synthesizing module 'sysgen_reinterpret_4bd3487388' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1061]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_reinterpret_4bd3487388' (37#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1061]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 	Parameter new_msb bound to: 30 - type: integer 
 	Parameter new_lsb bound to: 15 - type: integer 
 	Parameter x_width bound to: 34 - type: integer 
 	Parameter y_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized2' (41#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized2' (37#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlslice__parameterized3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
 	Parameter new_msb bound to: 30 - type: integer 
 	Parameter new_lsb bound to: 15 - type: integer 
 	Parameter x_width bound to: 34 - type: integer 
 	Parameter y_width bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized3' (41#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:69]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem1' (42#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:550]
-INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:610]
-INFO: [Synth 8-638] synthesizing module 'sysgen_constant_1aff05159a' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1075]
-INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_1aff05159a' (43#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1075]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_3 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlslice__parameterized3' (37#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:125]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem1' (38#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:486]
+INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:546]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_1aff05159a' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1074]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_1aff05159a' (39#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1074]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized1' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_2 - type: string 
 	Parameter op_width bound to: 4 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
 	Parameter oneStr bound to: 32'b00110001001100010011000100110001 
-INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_3_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_3' (44#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_c_counter_binary_v12_0_3_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized2' (44#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-INFO: [Synth 8-638] synthesizing module 'sysgen_relational_f303c211e7' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1083]
+INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_2_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_2' (40#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_2_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized1' (40#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_f303c211e7' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1082]
 	Parameter const_value bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_f303c211e7' (45#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1083]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem2' (46#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:610]
-INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:688]
-INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_3 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_f303c211e7' (41#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1082]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem2' (42#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:546]
+INFO: [Synth 8-638] synthesizing module 'channelizer_subsystem3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:624]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized2' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_2 - type: string 
 	Parameter op_width bound to: 4 - type: integer 
 	Parameter op_arith bound to: 1 - type: integer 
 	Parameter oneStr bound to: 32'b00110001001100010011000100110001 
-INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized3' (46#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
-WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem3' (47#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:688]
-INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1331]
-INFO: [Synth 8-638] synthesizing module 'channelizer_fir_compiler_v7_2_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_fir_compiler_v7_2_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_fir_compiler_v7_2_0' (48#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-20637-butch/realtime/channelizer_fir_compiler_v7_2_0_stub.v:7]
-INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6' (49#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1331]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_poly_phase_filter' (50#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:749]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_channelizer' (51#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:859]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1039]
-INFO: [Synth 8-638] synthesizing module 'channelizer_implementation_interface_in' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:946]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_implementation_interface_in' (52#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:946]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1045]
-INFO: [Synth 8-638] synthesizing module 'channelizer_implementation_interface_out' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:963]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_implementation_interface_out' (53#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:963]
-INFO: [Synth 8-256] done synthesizing module 'channelizer_struct' (54#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:983]
-INFO: [Synth 8-256] done synthesizing module 'channelizer' (55#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1077]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized2' (42#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_subsystem3' (43#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:624]
+INFO: [Synth 8-638] synthesizing module 'xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1535]
+INFO: [Synth 8-638] synthesizing module 'channelizer_fir_compiler_v7_2_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_fir_compiler_v7_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_fir_compiler_v7_2_0' (44#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_fir_compiler_v7_2_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6' (45#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1535]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_poly_phase_filter' (46#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:685]
+INFO: [Synth 8-638] synthesizing module 'channelizer_reset_register' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:798]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlcounter_free__parameterized3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+	Parameter core_name0 bound to: channelizer_c_counter_binary_v12_0_3 - type: string 
+	Parameter op_width bound to: 2 - type: integer 
+	Parameter op_arith bound to: 1 - type: integer 
+	Parameter oneStr bound to: 16'b0011000100110001 
+INFO: [Synth 8-638] synthesizing module 'channelizer_c_counter_binary_v12_0_3' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_3_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_c_counter_binary_v12_0_3' (47#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_c_counter_binary_v12_0_3_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlcounter_free__parameterized3' (47#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1303]
+WARNING: [Synth 8-350] instance 'counter' of module 'channelizer_xlcounter_free' requires 9 connections, but only 6 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:833]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_fc1426e2d9' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_fc1426e2d9' (48#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1099]
+INFO: [Synth 8-638] synthesizing module 'sysgen_relational_9133ff9c4b' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1116]
+	Parameter const_value bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'sysgen_relational_9133ff9c4b' (49#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1116]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_07b701207a' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1133]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_07b701207a' (50#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1133]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_118900d9b9' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1141]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_118900d9b9' (51#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1141]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_reset_register' (52#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:798]
+INFO: [Synth 8-638] synthesizing module 'channelizer_xlaxififogen' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1183]
+	Parameter core_name0 bound to: channelizer_fifo_generator_v12_0_0 - type: string 
+	Parameter has_aresetn bound to: 1 - type: integer 
+	Parameter tdata_width bound to: 8 - type: integer 
+	Parameter tdest_width bound to: 4 - type: integer 
+	Parameter tstrb_width bound to: -1 - type: integer 
+	Parameter tkeep_width bound to: -1 - type: integer 
+	Parameter tid_width bound to: 8 - type: integer 
+	Parameter tuser_width bound to: 4 - type: integer 
+	Parameter depth_bits bound to: 13 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'channelizer_fifo_generator_v12_0_0' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_fifo_generator_v12_0_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_fifo_generator_v12_0_0' (53#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/synth_1/.Xil/Vivado-5323-butch/realtime/channelizer_fifo_generator_v12_0_0_stub.v:7]
+WARNING: [Synth 8-3848] Net axis_underflow in module/entity channelizer_xlaxififogen does not have driver. [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1225]
+WARNING: [Synth 8-3848] Net axis_overflow in module/entity channelizer_xlaxififogen does not have driver. [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1226]
+WARNING: [Synth 8-3848] Net axis_data_count in module/entity channelizer_xlaxififogen does not have driver. [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1227]
+WARNING: [Synth 8-3848] Net m_axis_tstrb in module/entity channelizer_xlaxififogen does not have driver. [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1240]
+WARNING: [Synth 8-3848] Net m_axis_tkeep in module/entity channelizer_xlaxififogen does not have driver. [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1241]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_xlaxififogen' (54#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:1183]
+WARNING: [Synth 8-350] instance 'axi_fifo' of module 'channelizer_xlaxififogen' requires 26 connections, but only 11 given [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+INFO: [Synth 8-638] synthesizing module 'sysgen_constant_828adcadae' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:39]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_constant_828adcadae' (55#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:39]
+INFO: [Synth 8-638] synthesizing module 'sysgen_logical_8b7810a2aa' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:79]
+INFO: [Synth 8-256] done synthesizing module 'sysgen_logical_8b7810a2aa' (56#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer_entity_declarations.v:79]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_channelizer' (57#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:889]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1167]
+INFO: [Synth 8-638] synthesizing module 'channelizer_implementation_interface_in' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1054]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_implementation_interface_in' (58#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1054]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1176]
+INFO: [Synth 8-638] synthesizing module 'channelizer_implementation_interface_out' [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1080]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_implementation_interface_out' (59#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1080]
+INFO: [Synth 8-256] done synthesizing module 'channelizer_struct' (60#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1106]
+INFO: [Synth 8-256] done synthesizing module 'channelizer' (61#1) [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1210]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 984.922 ; gain = 174.809 ; free physical = 773 ; free virtual = 9972
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 984.926 ; gain = 174.809 ; free physical = 952 ; free virtual = 11719
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -491,32 +527,70 @@ WARNING: [Synth 8-3295] tying undriven pin counter2:din[3] to constant 0 [/home/
 WARNING: [Synth 8-3295] tying undriven pin counter2:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:317]
 WARNING: [Synth 8-3295] tying undriven pin counter2:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:317]
 WARNING: [Synth 8-3295] tying undriven pin counter2:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:317]
-WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[9] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[8] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[7] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[6] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[5] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[4] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:425]
-WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:653]
-WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
-WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:722]
+WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:589]
+WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:658]
+WARNING: [Synth 8-3295] tying undriven pin counter:up to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:833]
+WARNING: [Synth 8-3295] tying undriven pin counter:load to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:833]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:833]
+WARNING: [Synth 8-3295] tying undriven pin counter:din[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:833]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[11] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[10] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[9] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[8] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[7] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[6] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[5] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[4] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_full_thresh[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[11] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[10] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[9] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[8] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[7] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[6] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[5] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[4] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:axis_prog_empty_thresh[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tstrb[-2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tstrb[-1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tstrb[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tkeep[-2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tkeep[-1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tkeep[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[7] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[6] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[5] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[4] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tid[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tdest[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tdest[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tdest[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tdest[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tuser[3] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tuser[2] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tuser[1] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
+WARNING: [Synth 8-3295] tying undriven pin axi_fifo:s_axis_tuser[0] to constant 0 [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/imports/sysgen/channelizer.v:1001]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 984.922 ; gain = 174.809 ; free physical = 773 ; free virtual = 9972
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 984.926 ; gain = 174.809 ; free physical = 951 ; free virtual = 11719
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k410tffg900-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -532,25 +606,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1382.773 ; gain = 0.000 ; free physical = 572 ; free virtual = 9771
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1377.777 ; gain = 0.000 ; free physical = 722 ; free virtual = 11485
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 563 ; free virtual = 9763
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 718 ; free virtual = 11483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k410tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 563 ; free virtual = 9763
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 718 ; free virtual = 11483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 563 ; free virtual = 9763
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 718 ; free virtual = 11483
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 558 ; free virtual = 9757
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 712 ; free virtual = 11477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -563,7 +637,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 19    
+	                1 Bit    Registers := 20    
 +---Muxes : 
 	   3 Input     16 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
@@ -597,19 +671,10 @@ BRAMs: 1590 (col length: RAMB18 140 RAMB36 70)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 558 ; free virtual = 9757
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 711 ; free virtual = 11476
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3331] design channelizer has unconnected port last_in[0]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[7]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[6]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[5]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[4]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[3]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[2]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[1]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_addr_in[0]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[31]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[30]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[29]
@@ -642,11 +707,10 @@ WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[3]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[2]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[1]
 WARNING: [Synth 8-3331] design channelizer has unconnected port set_data_in[0]
-WARNING: [Synth 8-3331] design channelizer has unconnected port set_stb_in[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 551 ; free virtual = 9750
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 703 ; free virtual = 11469
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 551 ; free virtual = 9750
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 703 ; free virtual = 11469
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -658,16 +722,16 @@ WARNING: [Synth 8-3332] Sequential element (\channelizer_default_clock_driver/cl
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 550 ; free virtual = 9733
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 687 ; free virtual = 11452
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 550 ; free virtual = 9733
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 687 ; free virtual = 11452
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 550 ; free virtual = 9733
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 687 ; free virtual = 11452
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -675,10 +739,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 524 ; free virtual = 9707
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 657 ; free virtual = 11423
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 524 ; free virtual = 9707
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 657 ; free virtual = 11423
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -690,7 +754,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9689
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -708,7 +772,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9688
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -721,7 +785,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9688
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -733,13 +797,13 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9689
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9689
+Start Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9689
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -763,13 +827,14 @@ Report BlackBoxes:
 +------+-------------------------------------+----------+
 |      |BlackBox name                        |Instances |
 +------+-------------------------------------+----------+
-|1     |channelizer_xfft_v9_0_0              |         1|
-|2     |channelizer_c_counter_binary_v12_0_0 |         1|
-|3     |channelizer_c_counter_binary_v12_0_1 |         1|
-|4     |channelizer_blk_mem_gen_v8_2_0       |         1|
-|5     |channelizer_c_counter_binary_v12_0_2 |         1|
+|1     |channelizer_fifo_generator_v12_0_0   |         1|
+|2     |channelizer_xfft_v9_0_0              |         1|
+|3     |channelizer_c_counter_binary_v12_0_0 |         1|
+|4     |channelizer_c_counter_binary_v12_0_1 |         1|
+|5     |channelizer_blk_mem_gen_v8_2_0       |         1|
 |6     |channelizer_fir_compiler_v7_2_0      |         1|
-|7     |channelizer_c_counter_binary_v12_0_3 |         2|
+|7     |channelizer_c_counter_binary_v12_0_2 |         2|
+|8     |channelizer_c_counter_binary_v12_0_3 |         1|
 +------+-------------------------------------+----------+
 
 Report Cell Usage: 
@@ -780,50 +845,53 @@ Report Cell Usage:
 |2     |channelizer_c_counter_binary_v12_0_0    |     1|
 |3     |channelizer_c_counter_binary_v12_0_1    |     1|
 |4     |channelizer_c_counter_binary_v12_0_2    |     1|
-|5     |channelizer_c_counter_binary_v12_0_3    |     1|
-|6     |channelizer_c_counter_binary_v12_0_3__1 |     1|
-|7     |channelizer_fir_compiler_v7_2_0         |     1|
-|8     |channelizer_xfft_v9_0_0                 |     1|
-|9     |LUT1                                    |     2|
-|10    |LUT2                                    |     5|
-|11    |LUT4                                    |     2|
-|12    |LUT5                                    |    31|
-|13    |LUT6                                    |     2|
-|14    |SRL16E                                  |     1|
-|15    |FDRE                                    |    20|
+|5     |channelizer_c_counter_binary_v12_0_2__1 |     1|
+|6     |channelizer_c_counter_binary_v12_0_3    |     1|
+|7     |channelizer_fifo_generator_v12_0_0      |     1|
+|8     |channelizer_fir_compiler_v7_2_0         |     1|
+|9     |channelizer_xfft_v9_0_0                 |     1|
+|10    |LUT1                                    |     1|
+|11    |LUT2                                    |     8|
+|12    |LUT4                                    |     4|
+|13    |LUT5                                    |    30|
+|14    |LUT6                                    |     2|
+|15    |SRL16E                                  |     1|
+|16    |FDRE                                    |    21|
 +------+----------------------------------------+------+
 
 Report Instance Areas: 
 +------+----------------------------------------+----------------------------------------------------------+------+
 |      |Instance                                |Module                                                    |Cells |
 +------+----------------------------------------+----------------------------------------------------------+------+
-|1     |top                                     |                                                          |   301|
-|2     |  channelizer_struct                    |channelizer_struct                                        |   301|
-|3     |    channelizer_x0                      |channelizer_channelizer                                   |   301|
-|4     |      fft1                              |channelizer_fft1                                          |    91|
-|5     |        ifft_fast_fourier_transform_8_1 |xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc |    91|
-|6     |      frame_reverse                     |channelizer_frame_reverse                                 |    96|
-|7     |        counter                         |channelizer_xlcounter_free                                |     5|
-|8     |        counter2                        |channelizer_xlcounter_free__parameterized0                |     5|
-|9     |        delay                           |sysgen_delay_2640a39ee9                                   |    21|
-|10    |        delay1                          |sysgen_delay_52cccd8896_0                                 |     1|
-|11    |        dual_port_ram                   |channelizer_xldpram                                       |    64|
-|12    |      last_handler                      |channelizer_last_handler                                  |    12|
-|13    |        counter                         |channelizer_xlcounter_free__parameterized1                |    12|
-|14    |      poly_phase_filter                 |channelizer_poly_phase_filter                             |   102|
-|15    |        fir_compiler_7_2_1              |xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6           |    89|
-|16    |        subsystem2                      |channelizer_subsystem2                                    |     8|
-|17    |          counter                       |channelizer_xlcounter_free__parameterized2                |     6|
-|18    |          delay                         |sysgen_delay_52cccd8896                                   |     2|
-|19    |        subsystem3                      |channelizer_subsystem3                                    |     5|
-|20    |          counter                       |channelizer_xlcounter_free__parameterized3                |     5|
+|1     |top                                     |                                                          |   324|
+|2     |  channelizer_struct                    |channelizer_struct                                        |   324|
+|3     |    channelizer_x0                      |channelizer_channelizer                                   |   324|
+|4     |      axi_fifo                          |channelizer_xlaxififogen                                  |    27|
+|5     |      fft1                              |channelizer_fft1                                          |    90|
+|6     |        ifft_fast_fourier_transform_8_1 |xlfast_fourier_transform_c87919ddd6bfbf81b10158bf539068dc |    90|
+|7     |      frame_reverse                     |channelizer_frame_reverse                                 |    96|
+|8     |        counter                         |channelizer_xlcounter_free                                |     5|
+|9     |        counter2                        |channelizer_xlcounter_free__parameterized0                |     5|
+|10    |        delay                           |sysgen_delay_2640a39ee9                                   |    21|
+|11    |        delay1                          |sysgen_delay_52cccd8896_1                                 |     1|
+|12    |        dual_port_ram                   |channelizer_xldpram                                       |    64|
+|13    |      poly_phase_filter                 |channelizer_poly_phase_filter                             |   102|
+|14    |        fir_compiler_7_2_1              |xlfir_compiler_19490f93cbd7e22fee0db5c2ec90c7a6           |    89|
+|15    |        subsystem2                      |channelizer_subsystem2                                    |     8|
+|16    |          counter                       |channelizer_xlcounter_free__parameterized1                |     6|
+|17    |          delay                         |sysgen_delay_52cccd8896_0                                 |     2|
+|18    |        subsystem3                      |channelizer_subsystem3                                    |     5|
+|19    |          counter                       |channelizer_xlcounter_free__parameterized2                |     5|
+|20    |      reset_register                    |channelizer_reset_register                                |     9|
+|21    |        counter                         |channelizer_xlcounter_free__parameterized3                |     4|
+|22    |        delay                           |sysgen_delay_52cccd8896                                   |     5|
 +------+----------------------------------------+----------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 505 ; free virtual = 9688
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1382.773 ; gain = 58.285 ; free physical = 506 ; free virtual = 9689
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 572.660 ; free physical = 506 ; free virtual = 9689
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1377.777 ; gain = 58.285 ; free physical = 639 ; free virtual = 11404
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.777 ; gain = 567.660 ; free physical = 639 ; free virtual = 11404
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -831,43 +899,47 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-162 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+174 Infos, 123 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.773 ; gain = 464.141 ; free physical = 505 ; free virtual = 9688
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1382.773 ; gain = 0.000 ; free physical = 503 ; free virtual = 9687
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 10:52:11 2016...
-[Mon Apr 18 10:52:16 2016] synth_1 finished
-wait_on_run: Time (s): cpu = 00:12:21 ; elapsed = 00:12:49 . Memory (MB): peak = 1049.965 ; gain = 7.879 ; free physical = 1037 ; free virtual = 10211
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1377.777 ; gain = 459.141 ; free physical = 638 ; free virtual = 11403
+report_utilization: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.17 . Memory (MB): peak = 1409.797 ; gain = 0.000 ; free physical = 639 ; free virtual = 11402
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 19 11:42:18 2016...
+[Tue Apr 19 11:42:23 2016] synth_1 finished
+wait_on_run: Time (s): cpu = 00:14:12 ; elapsed = 00:14:41 . Memory (MB): peak = 1057.855 ; gain = 7.879 ; free physical = 1162 ; free virtual = 11924
 Design is defaulting to impl run constrset: constrs_1
 Design is defaulting to synth run part: xc7k410tffg900-2
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fifo_generator_v12_0_0_synth_1/channelizer_fifo_generator_v12_0_0.dcp' for cell 'channelizer_struct/channelizer_x0/axi_fifo/comp0.core_instance0'
 INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_xfft_v9_0_0_synth_1/channelizer_xfft_v9_0_0.dcp' for cell 'channelizer_struct/channelizer_x0/fft1/ifft_fast_fourier_transform_8_1/channelizer_xfft_v9_0_0_instance'
 INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_0_synth_1/channelizer_c_counter_binary_v12_0_0.dcp' for cell 'channelizer_struct/channelizer_x0/frame_reverse/counter/comp0.core_instance0'
 INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_1_synth_1/channelizer_c_counter_binary_v12_0_1.dcp' for cell 'channelizer_struct/channelizer_x0/frame_reverse/counter2/comp1.core_instance1'
 INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_blk_mem_gen_v8_2_0_synth_1/channelizer_blk_mem_gen_v8_2_0.dcp' for cell 'channelizer_struct/channelizer_x0/frame_reverse/dual_port_ram/comp0.core_instance0'
-INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp' for cell 'channelizer_struct/channelizer_x0/last_handler/counter/comp2.core_instance2'
 INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fir_compiler_v7_2_0_synth_1/channelizer_fir_compiler_v7_2_0.dcp' for cell 'channelizer_struct/channelizer_x0/poly_phase_filter/fir_compiler_7_2_1/channelizer_fir_compiler_v7_2_0_instance'
-INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/channelizer_c_counter_binary_v12_0_3.dcp' for cell 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/counter/comp3.core_instance3'
-INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/channelizer_c_counter_binary_v12_0_3.dcp' for cell 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/counter/comp3.core_instance3'
-INFO: [Netlist 29-17] Analyzing 251 Unisim elements for replacement
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp' for cell 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem2/counter/comp2.core_instance2'
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp' for cell 'channelizer_struct/channelizer_x0/poly_phase_filter/subsystem3/counter/comp2.core_instance2'
+INFO: [Project 1-454] Reading design checkpoint '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/channelizer_c_counter_binary_v12_0_3.dcp' for cell 'channelizer_struct/channelizer_x0/reset_register/counter/comp3.core_instance3'
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.2
 INFO: [Device 21-403] Loading part xc7k410tffg900-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/ip/channelizer_fifo_generator_v12_0_0/channelizer_fifo_generator_v12_0_0/channelizer_fifo_generator_v12_0_0.xdc] for cell 'channelizer_struct/channelizer_x0/axi_fifo/comp0.core_instance0/U0'
+Finished Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/sources_1/ip/channelizer_fifo_generator_v12_0_0/channelizer_fifo_generator_v12_0_0/channelizer_fifo_generator_v12_0_0.xdc] for cell 'channelizer_struct/channelizer_x0/axi_fifo/comp0.core_instance0/U0'
 Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/constrs_1/imports/sysgen/channelizer.xdc]
 Finished Parsing XDC File [/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.srcs/constrs_1/imports/sysgen/channelizer.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fifo_generator_v12_0_0_synth_1/channelizer_fifo_generator_v12_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_xfft_v9_0_0_synth_1/channelizer_xfft_v9_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_0_synth_1/channelizer_c_counter_binary_v12_0_0.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_1_synth_1/channelizer_c_counter_binary_v12_0_1.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_blk_mem_gen_v8_2_0_synth_1/channelizer_blk_mem_gen_v8_2_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_fir_compiler_v7_2_0_synth_1/channelizer_fir_compiler_v7_2_0.dcp'
-INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/channelizer_c_counter_binary_v12_0_3.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_2_synth_1/channelizer_c_counter_binary_v12_0_2.dcp'
 INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/randy/rfnoc_dec2015/sysgen_models/channelizer/checkpoint/Synthesized Checkpoint/channelizer.runs/channelizer_c_counter_binary_v12_0_3_synth_1/channelizer_c_counter_binary_v12_0_3.dcp'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1439.352 ; gain = 389.387 ; free physical = 700 ; free virtual = 9874
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1450.242 ; gain = 392.387 ; free physical = 814 ; free virtual = 11589
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 2040.098 ; gain = 600.746 ; free physical = 240 ; free virtual = 9451
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 18 10:52:42 2016...
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 2048.988 ; gain = 598.746 ; free physical = 415 ; free virtual = 11171
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 19 11:42:50 2016...

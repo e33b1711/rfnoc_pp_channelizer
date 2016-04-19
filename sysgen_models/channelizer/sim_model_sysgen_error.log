@@ -5,64 +5,23 @@ Matlab 8.6.0.267246 (R2015b)            /usr/local/MATLAB/R2015b
 Vivado 2015.2                           /opt/Xilinx/Vivado/2015.2
 --------------------------------------------------------------------------------
 Summary of Errors:
-Error 0001: Illegal type on port: wea
-     Block: 'sim_model/channelizer/frame_reverse/Dual Port RAM'
-Error 0002: Illegal input type on port: d1
-     Block: 'sim_model/channelizer/frame_reverse/Logical'
-Error 0003: Illegal input type on port: d1
-     Block: 'sim_model/channelizer/frame_reverse/Logical1'
-Error 0004: Illegal input type on port: d1
-     Block: 'sim_model/channelizer/poly_phase_filter1/Logical1'
+Error 0001: Type propagation error
+     Block: 'sim_model/channelizer/AXI FIFO'
 --------------------------------------------------------------------------------
 
 Error 0001:
 
 Reported by:
-  'sim_model/channelizer/frame_reverse/Dual Port RAM'
+  'sim_model/channelizer/AXI FIFO'
 
 Details:
-The wea port has data type illegal.
-The wea port must be a Bool signal.
+Range of s_axis_tdata width is 8,16,..512 Debugging can also be
+assisted by turning on the display of types, either by setting
+the Block Display control on the System Generator block or by
+turning on Simulink's "Format -> Signal Display -> Port Data
+Type" control.
 
-Error occurred during "Rate and Type Error Checking".
 
---------------------------------------------------------------------------------
-
-Error 0001:
-
-Reported by:
-  'sim_model/channelizer/frame_reverse/Logical'
-
-Details:
-The d1 port is being driven by a Fix_16_14.
-Input data must all be of type "Bool" or all be of arithmetic
-type (UFix_* and/or Fix_*)
-Error occurred during "Rate and Type Error Checking".
-
---------------------------------------------------------------------------------
-
-Error 0001:
-
-Reported by:
-  'sim_model/channelizer/frame_reverse/Logical1'
-
-Details:
-The d1 port is being driven by a Fix_16_14.
-Input data must all be of type "Bool" or all be of arithmetic
-type (UFix_* and/or Fix_*)
-Error occurred during "Rate and Type Error Checking".
-
---------------------------------------------------------------------------------
-
-Error 0001:
-
-Reported by:
-  'sim_model/channelizer/poly_phase_filter1/Logical1'
-
-Details:
-The d1 port is being driven by a Bool.
-Input data must all be of type "Bool" or all be of arithmetic
-type (UFix_* and/or Fix_*)
 Error occurred during "Rate and Type Error Checking".
 
 --------------------------------------------------------------------------------

@@ -1,4 +1,4 @@
-
+reset_reg_address=200;
 
 
 N_sub=16;

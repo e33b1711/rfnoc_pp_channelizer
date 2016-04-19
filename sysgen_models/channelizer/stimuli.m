@@ -78,9 +78,30 @@ data_i=imag(input_tdm(counter));
 
 
 %%
-pac_len=16;
+
 last=zeros(sim_len,1);
-last=(mod(counter,pac_len)==0);
+for  i=2:(sim_len-1)
+    integer=randi(100,1,1);
+    
+    if last(i-1)==0
+        if valid(i)==1 && valid(i+1)==0
+            if integer<2
+                last(i)=1;
+            else
+                last(i)=0;
+            end
+        else
+            last(i)=0;
+        end
+    else
+        if valid(i-1)==0 && valid(i)==1
+            last(i)=0;
+        else
+            last(i)=1;
+        end
+    end
+end
+last(sim_len)=last(sim_len-1);
 
 % stem(valid)
 % hold on

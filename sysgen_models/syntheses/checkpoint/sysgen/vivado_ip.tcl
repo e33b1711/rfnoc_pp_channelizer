@@ -35,6 +35,69 @@
 #-----------------------------------------------------------------
 
 set existingipslist [get_ips]
+if {[lsearch $existingipslist syntheses_fifo_generator_v12_0_0] < 0} {
+create_ip -name fifo_generator -version 12.0 -vendor xilinx.com -library ip -module_name syntheses_fifo_generator_v12_0_0
+set params_list [list]
+lappend params_list CONFIG.Component_Name {syntheses_fifo_generator_v12_0_0}
+lappend params_list CONFIG.add_ngc_constraint_axi {False}
+lappend params_list CONFIG.address_width {32}
+lappend params_list CONFIG.axis_type {FIFO}
+lappend params_list CONFIG.clock_enable_type {Slave_Interface_Clock_Enable}
+lappend params_list CONFIG.clock_type_axi {Common_Clock}
+lappend params_list CONFIG.data_width {64}
+lappend params_list CONFIG.disable_timing_violations_axi {False}
+lappend params_list CONFIG.empty_threshold_assert_value_axis {1022}
+lappend params_list CONFIG.enable_common_overflow {False}
+lappend params_list CONFIG.enable_common_underflow {False}
+lappend params_list CONFIG.enable_data_counts_axis {false}
+lappend params_list CONFIG.enable_tlast {true}
+lappend params_list CONFIG.enable_tready {true}
+lappend params_list CONFIG.fifo_application_type_axis {Data_FIFO}
+lappend params_list CONFIG.fifo_application_type_rach {Data_FIFO}
+lappend params_list CONFIG.fifo_application_type_rdch {Data_FIFO}
+lappend params_list CONFIG.fifo_application_type_wach {Data_FIFO}
+lappend params_list CONFIG.fifo_application_type_wdch {Data_FIFO}
+lappend params_list CONFIG.fifo_application_type_wrch {Data_FIFO}
+lappend params_list CONFIG.fifo_implementation_axis {Common_Clock_Block_RAM}
+lappend params_list CONFIG.fifo_implementation_rach {Common_Clock_Distributed_RAM}
+lappend params_list CONFIG.fifo_implementation_rdch {Common_Clock_Block_RAM}
+lappend params_list CONFIG.fifo_implementation_wach {Common_Clock_Distributed_RAM}
+lappend params_list CONFIG.fifo_implementation_wdch {Common_Clock_Block_RAM}
+lappend params_list CONFIG.fifo_implementation_wrch {Common_Clock_Distributed_RAM}
+lappend params_list CONFIG.full_threshold_assert_value_axis {0}
+lappend params_list CONFIG.has_aclken {False}
+lappend params_list CONFIG.has_tkeep {false}
+lappend params_list CONFIG.has_tstrb {false}
+lappend params_list CONFIG.input_depth_axis {4096}
+lappend params_list CONFIG.input_depth_rach {16}
+lappend params_list CONFIG.input_depth_rdch {1024}
+lappend params_list CONFIG.input_depth_wach {16}
+lappend params_list CONFIG.input_depth_wdch {1024}
+lappend params_list CONFIG.input_depth_wrch {16}
+lappend params_list CONFIG.interface_type {AXI_STREAM}
+lappend params_list CONFIG.overflow_flag_axi {false}
+lappend params_list CONFIG.overflow_sense_axi {Active_High}
+lappend params_list CONFIG.programmable_empty_type_axis {No_Programmable_Empty_Threshold}
+lappend params_list CONFIG.programmable_full_type_axis {No_Programmable_Full_Threshold}
+lappend params_list CONFIG.rach_type {FIFO}
+lappend params_list CONFIG.rdch_type {FIFO}
+lappend params_list CONFIG.tdata_num_bytes {1}
+lappend params_list CONFIG.tdest_width {4}
+lappend params_list CONFIG.tid_width {8}
+lappend params_list CONFIG.tkeep_width {8}
+lappend params_list CONFIG.tstrb_width {8}
+lappend params_list CONFIG.tuser_width {4}
+lappend params_list CONFIG.underflow_flag_axi {false}
+lappend params_list CONFIG.underflow_sense_axi {Active_High}
+lappend params_list CONFIG.wach_type {FIFO}
+lappend params_list CONFIG.wdch_type {FIFO}
+lappend params_list CONFIG.wrch_type {FIFO}
+
+set_property -dict $params_list [get_ips syntheses_fifo_generator_v12_0_0]
+}
+
+
+set existingipslist [get_ips]
 if {[lsearch $existingipslist syntheses_xfft_v9_0_0] < 0} {
 create_ip -name xfft -version 9.0 -vendor xilinx.com -library ip -module_name syntheses_xfft_v9_0_0
 set params_list [list]
@@ -66,34 +129,6 @@ lappend params_list CONFIG.transform_length {16}
 lappend params_list CONFIG.xk_index {false}
 
 set_property -dict $params_list [get_ips syntheses_xfft_v9_0_0]
-}
-
-
-set existingipslist [get_ips]
-if {[lsearch $existingipslist syntheses_c_counter_binary_v12_0_0] < 0} {
-create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name syntheses_c_counter_binary_v12_0_0
-set params_list [list]
-lappend params_list CONFIG.Component_Name {syntheses_c_counter_binary_v12_0_0}
-lappend params_list CONFIG.ainit_value {0}
-lappend params_list CONFIG.ce {true}
-lappend params_list CONFIG.count_mode {UP}
-lappend params_list CONFIG.fb_latency {0}
-lappend params_list CONFIG.final_count_value {1}
-lappend params_list CONFIG.implementation {Fabric}
-lappend params_list CONFIG.increment_value {1}
-lappend params_list CONFIG.latency {1}
-lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {10}
-lappend params_list CONFIG.restrict_count {false}
-lappend params_list CONFIG.sclr {false}
-lappend params_list CONFIG.sinit {true}
-lappend params_list CONFIG.sinit_value {0}
-lappend params_list CONFIG.sset {false}
-lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
-lappend params_list CONFIG.sync_threshold_output {false}
-lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
-
-set_property -dict $params_list [get_ips syntheses_c_counter_binary_v12_0_0]
 }
 
 
@@ -175,6 +210,34 @@ set_property -dict $params_list [get_ips syntheses_fir_compiler_v7_2_0]
 
 
 set existingipslist [get_ips]
+if {[lsearch $existingipslist syntheses_c_counter_binary_v12_0_0] < 0} {
+create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name syntheses_c_counter_binary_v12_0_0
+set params_list [list]
+lappend params_list CONFIG.Component_Name {syntheses_c_counter_binary_v12_0_0}
+lappend params_list CONFIG.ainit_value {0}
+lappend params_list CONFIG.ce {true}
+lappend params_list CONFIG.count_mode {UP}
+lappend params_list CONFIG.fb_latency {0}
+lappend params_list CONFIG.final_count_value {1}
+lappend params_list CONFIG.implementation {Fabric}
+lappend params_list CONFIG.increment_value {1}
+lappend params_list CONFIG.latency {1}
+lappend params_list CONFIG.load {false}
+lappend params_list CONFIG.output_width {4}
+lappend params_list CONFIG.restrict_count {false}
+lappend params_list CONFIG.sclr {false}
+lappend params_list CONFIG.sinit {true}
+lappend params_list CONFIG.sinit_value {0}
+lappend params_list CONFIG.sset {false}
+lappend params_list CONFIG.sync_ce_priority {Sync_Overrides_CE}
+lappend params_list CONFIG.sync_threshold_output {false}
+lappend params_list CONFIG.syncctrlpriority {Reset_Overrides_Set}
+
+set_property -dict $params_list [get_ips syntheses_c_counter_binary_v12_0_0]
+}
+
+
+set existingipslist [get_ips]
 if {[lsearch $existingipslist syntheses_c_counter_binary_v12_0_1] < 0} {
 create_ip -name c_counter_binary -version 12.0 -vendor xilinx.com -library ip -module_name syntheses_c_counter_binary_v12_0_1
 set params_list [list]
@@ -188,7 +251,7 @@ lappend params_list CONFIG.implementation {Fabric}
 lappend params_list CONFIG.increment_value {1}
 lappend params_list CONFIG.latency {1}
 lappend params_list CONFIG.load {false}
-lappend params_list CONFIG.output_width {4}
+lappend params_list CONFIG.output_width {2}
 lappend params_list CONFIG.restrict_count {false}
 lappend params_list CONFIG.sclr {false}
 lappend params_list CONFIG.sinit {true}
