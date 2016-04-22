@@ -20,7 +20,7 @@
       <name>reset</name>
       <type>int</type>
       <value>32</value>
-      <action>SR_WRITE("SR_PKT_SIZE", $pkt_size)</action>
+      <action>SR_WRITE("RESET", $reset)</action>
     </arg>
   </args>
 <ports>
