@@ -102,7 +102,9 @@ rebuild firmware
 
 # E. Known Issues
 
-Works fine so far. If you find any please report them to e33b1711@gmail.com ! 
+Works fine so far. If you find any please report them to e33b1711@gmail.com !
+
+The FIR Compiler is not very resourcefull, because it can randomly switch between the different impulse responses (uses LUTs, i guess). For the fixed sequence of impulse responses, there might be more resourcefull deigns. 
 
 
 
