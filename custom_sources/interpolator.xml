@@ -1,0 +1,68 @@
+<!--This defines one NoC-Block.-->
+<nocblock>
+  <name>Interpolator</name>
+  <blockname>Interpolator</blockname>
+  <!--There can be several of these:-->
+  <ids>
+    <id revision="0">11F1</id>
+  </ids>
+
+
+  <!-- Registers -->
+  <registers>
+    <setreg>
+      <name>CLOCK_STEP</name>
+      <address>136</address>
+    </setreg>
+
+    <setreg>
+      <name>INPUT_MUX</name>
+      <address>137</address>
+    </setreg>
+
+    <setreg>
+      <name>RESET</name>
+      <address>200</address>
+    </setreg>
+
+  </registers>
+
+
+  <!-- Args -->
+  <args>
+    <arg>
+      <name>clock_step</name>
+      <type>double</type>
+      <value>1.0</value>
+      <!--We set the register value to clock_step * 2^29 -->
+      <action>SR_WRITE("CLOCK_STEP", IROUND(MULT($clock_step, 536870912.0)))</action>
+    </arg>
+
+    <arg>
+      <name>input_mux</name>
+      <type>int</type>
+      <value>0</value>
+      <action>SR_WRITE("INPUT_MUX", $input_mux)</action>
+    </arg>
+
+    <arg>
+      <name>reset</name>
+      <type>int</type>
+      <value>1</value>
+      <!--setting the register to any value triggers a reset -->
+      <action>SR_WRITE("RESET", $reset)</action>
+    </arg>
+
+  </args>
+
+  <!-- Ports -->
+  <ports>
+    <sink>
+      <name>in</name>
+    </sink>
+    <source>
+      <name>out</name>
+    </source>
+  </ports>
+
+</nocblock>

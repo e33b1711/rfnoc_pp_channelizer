@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<block>
+  <name>RFNoC: SSAM: Interpolator</name>
+  <key>uhd_rfnoc_streamer_interpolator</key>
+  <import>import ettus</import>
+  <make>ettus.rfnoc_generic(
+      self.device3,
+      uhd.stream_args( \# TX Stream Args
+          cpu_format="fc32",
+          otw_format="sc16",
+          args="clock_step={},input_mux={},reset={}".format($clock_step, $input_mux, $reset),
+      ),
+      uhd.stream_args( \# TX Stream Args
+          cpu_format="fc32",
+          otw_format="sc16",
+          args="clock_step={},input_mux={},reset={}".format($clock_step, $input_mux, $reset),
+      ),
+      "Interpolator", $block_index, $device_index,
+)
+self.$(id).set_arg("reset", $reset)
+self.$(id).set_arg("clock_step", $clock_step)
+self.$(id).set_arg("input_mux", $input_mux)
+
+
+</make>
+  <callback>set_arg("clock_step", $clock_step)</callback>
+  <callback>set_arg("input_mux", $input_mux)</callback>
+  <callback>set_arg("reset", $reset)</callback>
+
+
+
+  <param>
+    <name>clock_step</name>
+    <key>clock_step</key>
+    <value>1.0</value>
+    <type>float</type>
+  </param>
+
+ <param>
+    <name>reset</name>
+    <key>reset</key>
+    <value>0</value>
+    <type>int</type>
+    <tab>RFNoC Config</tab>
+  </param>
+
+  <param>
+    <name>input mux select</name>
+    <key>input_mux</key>
+    <value>0</value>
+    <type>int</type>
+    <tab>RFNoC Config</tab>
+  </param>
+
+
+  <param>
+    <name>Interpolator Select</name>
+    <key>block_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($block_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+  <param>
+    <name>Device Select</name>
+    <key>device_index</key>
+    <value>-1</value>
+    <type>int</type>
+    <hide>#if int($device_index()) &lt; 0 then 'part' else 'none'#</hide>
+    <tab>RFNoC Config</tab>
+  </param>
+
+    <check>($clock_step &gt;= 0.995 and $clock_step &lt;= 1.005)</check>
+
+  <sink>
+    <name>in</name>
+    <type>complex</type>
+    <domain>rfnoc</domain>
+  </sink>
+
+  <source>
+    <name>out</name>
+    <type>complex</type>
+    <domain>rfnoc</domain>
+  </source>
+</block>
